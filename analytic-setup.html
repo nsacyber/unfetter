@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Unfetter</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+   <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="analytics.html">Unfetter|Analytic</a></li>
+    <li><a href="https://www.github.com/iadgov/unfetter-analytic">Github</a></li>
+    <li><a href="analytic-architecture.html">Architecture</a></li>
+    <li><a href="analytic-setup.html">Setup</a></li>
+    <li><a href="analytic-events.html">Generate Events</a>
+      <li>
+  </ul>
+
+  <nav class="application-header" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="http://www.unfetter.io" class="brand-logo"><img src="images/brand-logo.png"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Unfetter|Analytic<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="https://www.github.com/iadgov/unfetter-discover">Unfetter|Discover</a></li>
+        <li><a href="https://mitre.github.io/unfetter" target="_blank">Unfetter at MITRE</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li class="active subheader"> <a href="analytics.html">Unfetter|Analytic</a></li>
+        <li>
+          <div class="divider"></div>
+        </li>
+        <li><a href="https://www.github.com/iadgov/unfetter-analytic">Github</a></li>
+        <li><a href="analytic-architecture.html">Architecture</a></li>
+        <li><a href="analytic-setup.html">Setup</a></li>
+        <li><a href="analytic-events.html">Generate Events</a>
+          <li>
+            <li><a class='subheader' href="https://www.github.com/iadgov/unfetter-discover">Unfetter|Discover</a></li>
+            <li>
+              <div class="divider"></div>
+            </li>
+            <li><a href="https://mitre.github.io/unfetter" target="_blank">Unfetter at MITRE</a></li>
+
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br><br>
+            <h1 class="header center indigo-text">Unfetter|Analytic Setup</h1>
+            <div class="row left">
+                <div class="col s12">
+                    <p>
+                        The Unfetter|Analytic system is built using Vagrant for easy download and deployment. Running <strong>vagrant up</strong> will provide the full Windows victim and Unfetter|Analytic analytic server. Services will be turned on, Windows event logs and Sysmon data will be forwarded and ingested, and Kibana dashboards will be running.  You can start running the provided analytics or write your own.
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br><br>
+            <h2 class="header indigo-text">The Base System</h2>
+            <div class="row left">
+                <div class="col s12">
+                    <p>
+                        The Unfetter|Analytic system was tested on Windows 7 Professional and Windows 10 Home host operating systems (OSes) using VirtualBox.  However, any OS that supports Vagrant should work, since both systems run in virtual machines (VMs).  
+</p>
+<p>
+If using Windows as your host OS we recommend you run a Bash client to interact with Vagrant, but it is not strictly necessary.
+</p>
+<p>
+Under the main directory, there are two sub-directories: unfetter-analytic and unfetter-windows.  Each of those directories contains a Vagrantfile and all the scripts necessary to provision each system.  When first starting each VM with <code>vagrant up</code>, Vagrant provisioning will go out and install all the software needed for each VM. No software, other than source code, is provided in the GitHub project.
+</p>
+<ul class="collection with-header">
+<li class="collection-header"><h4>To install the prerequisites</h4></li>
+<li class="collection-item">Install <a href="https://www.vagrantup.com/docs/installation" target="_blank">Vagrant</a></li>
+<li class="collection-item">Install <a href="https://www.virtualbox.comwiki/Downloads" target="_blank">Oracle's VirtualBox</a></li>
+<li class="collection-item">Install a git client and run <strong>clone github.com/iadgove/unfetter-analytic.git</strong></li>
+</ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+   <br><br>
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br><br>
+            <h2 class="header indigo-text">Proxy Setup (optional)</h2>
+            <div class="row left">
+                <div class="col s12">
+                    <p>
+                        We recommend that you avoid using an HTTP proxy when setting up Unfetter. If you must use a proxy you will need to configure Vagrant appropriately. One option is to use the <a href="https://github.com/tmatilai/vagrant-proxyconf" target="_blank">vagrant=proxyconf</a> plugin.
+</p>
+<p>
+During limited testing with a proxy we have noticed that Vagrant has trouble communicating with Unfetter Windows VM over WinRM, resulting in WinRM errors. WinRM appears to be trying to resolve 127.0.0.1 using the proxy, despite the no_proxy settings. Removing the proxy environment variable in the host OS command prompt using <strong>set http_proxy=</strong> fixes the issue.
+</p>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+   <br><br>
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br><br>
+            <h2 class="header indigo-text">Starting The Server</h2>
+            <div class="row left">
+                <div class="col s12">
+<p>The Unfetter|Analytic Linux VM contains the ELK stack, Apache Spark, and the Python (PySpark) files that run the analytics.</p>  
+
+<p>The Windows VM is a Windows 7 32-bit with Microsoft Sysmon and Nxlog installed.  Nxlog is already configured to send logs to Unfetter|Analytic.  After cloning the files from this project perform the following:</p>
+<p>
+&nbsp;&nbsp;&nbsp;cd ./unfetter-analytic<br>
+&nbsp;&nbsp;&nbsp;vagrant up
+</p>
+<p>Wait until Vagrant is provisioned.  You can verify that it works by checking one of the Web interfaces (see below). There won't be any data until the Windows system begins running and forwards events.</p> 
+<p>You can log into the VM using "vagrant ssh" from the Bash shell or an ssh client of your choice.  The username/password for the VM is "vagrant/vagrant".</p>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>    
+   <br><br>
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br><br>
+            <h2 class="header indigo-text">Starting Windows Victim</h2>
+            <div class="row left">
+                <div class="col s12">
+<p>Setting up the Windows system the first time has a few more steps than setting up the analytic server.  You will need a version of Windows 7 that can be created as a box file.  There are a few ways to do this, but these instructions will show you how to use <a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/" target="_blank">modern.ie</a> to download an evaluation copy of Windows 7 from Microsoft.
+    </p>  
+
+<ul class="collection">
+
+<li class="collection-item">Go to the <a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/" target="_blank">modern.ie</a> site and download an IE11 on Win7 Virtual Machine for the Vagrant platform.</li>
+<li class="collection-item">Unzip IE11.Win7.Vagrant.zip and load the box file (IE11 - Win7.box) to your host computer. The box file is a VM packaged with metadata that Vagrant uses as a starting point for your VM.</li>
+<li class="collection-item">Go to the directory where you unzipped the .box file and run the command: <strong>vagrant box add win7 'IE11 - Win7.box'</strong></li>
+<li class="collection-item">Your Vagrant system should now have a base Windows 7 image called <i>Win7</i>.</li>
+<li class="collection-item">Go to the "unfetter-windows" directory and run: <strong>vagrant up</strong></li>
+</ul>
+<p>
+Vagrant won't be able to complete the provisioning on its own. Manual configuration of Vagrant is necessary so that Vagrant can communicate with the guest Windows OS. When the Windows GUI starts, do the following on the VirtualBox window
+<ul class="collection">
+
+<li class="collection-item">Set the network location to Home or Work. Go to Control panel -> Network and Sharing Center and click on "Public network" under "View Your Active Networks" in order to change the type.</li>
+<li class="collection-item">Run the following script as administrator:</li>
+<li class="collection-item">@echo off<br>
+set WINRM_EXEC=call %SYSTEMROOT%\System32\winrm<br>
+%WINRM_EXEC% quickconfig -q<br>
+%WINRM_EXEC% set winrm/config/winrs @{MaxMemoryPerShellMB="300"}<br>
+%WINRM_EXEC% set winrm/config @{MaxTimeoutms="1800000"}<br>
+%WINRM_EXEC% set winrm/config/client/auth @{Basic="true"}<br>
+%WINRM_EXEC% set winrm/config/service @{AllowUnencrypted="true"}<br>
+%WINRM_EXEC% set winrm/config/service/auth @{Basic="true"}</li>
+</ul>
+</p>
+<p>
+This script is located in unfetter-windows/resources/winrm.cmd on the host OS. After you change the network type in the guest OS the script will be accessible under \\VBOXSVR\vagrant\resources. Either execute it from that location or copy it and paste it into a new .cmd file on the guest OS using Notepad.
+</p><p>
+Navigate back to the window where "vagrant up" was executed. Provisioning should continue now that Vagrant can communicate with the guest OS. Vagrant will install and configure Sysmon and Nxlog. When it is all done, check the following log file for errors to make sure the Windows machine can see the analytic server: <strong>c:\Program Files\nxlog\data\nxlog.log</strong>
+</p>
+
+<p>
+The VM can be accessed through the GUI. If you used Modern.ie, then the credentials are "IEUser/Passw0rd!"
+</p><p>
+It is HIGHLY recommended that if you work with Microsoft Windows, you purchase a licensed copy and build your own Vagrant box file. If you want to make your own base Windows box, this <a href="http://www.hurryupandwait.io/blog/creating-windows-base-images-for-virtualbox-and-hyper-v-using-packer-boxstarter-and-vagrant" target="_blank">webpage</a> has an example.
+</p>
+
+                </div>
+            </div>
+        </div>
+    </div>    
+
+   <br><br>
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br><br>
+            <h2 class="header indigo-text">Web Interfaces</h2>
+            <div class="row left">
+                <div class="col s12">
+<p>
+Unfetter|Analytic provides two interfaces to see your collected data. Kibana provides a full-featured interface to perform complex searches. You can access it at:
+
+<strong>http://localhost:5601</strong>
+</p><p>
+The Elasticsearch head plugin provides a simple interface that allows you to browse through the collected data. It is accessible at:
+<strong>http://localhost:9200/_plugin/head</strong>
+
+</p>
+<p>Next, learn to <a href="events.html" target="_blank">Generate Events</a></p>
+                </div>
+            </div>
+        </div>
+    </div>           
+    <div class="container">
+        <div class="section">
+
+            <!--   Icon Section   -->
+            <div class="row">
+                <div class="col s12 m4">
+                </div>
+
+                <div class="col s12 m4">
+                </div>
+
+                <div class="col s12 m4">
+                </div>
+            </div>
+
+        </div>
+        <br><br>
+
+      
+    </div>
+    <footer class="application-header">
+
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="white text-lighten-3" target="_blank" href="http://www.iad.gov">NSA Information Assurance</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+</body>
+
+</html>

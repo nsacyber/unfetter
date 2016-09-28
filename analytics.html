@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Unfetter</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="analytics.html">Unfetter|Analytic</a></li>
+    <li><a href="https://www.github.com/iadgov/unfetter-analytic">Github</a></li>
+    <li><a href="analytic-architecture.html">Architecture</a></li>
+    <li><a href="analytic-setup.html">Setup</a></li>
+    <li><a href="analytic-events.html">Generate Events</a>
+      <li>
+  </ul>
+
+  <nav class="application-header" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="http://www.unfetter.io" class="brand-logo"><img src="images/brand-logo.png"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Unfetter|Analytic<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="https://www.github.com/iadgov/unfetter-discover">Unfetter|Discover</a></li>
+        <li><a href="https://mitre.github.io/unfetter" target="_blank">Unfetter at MITRE</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li class="active subheader"> <a href="analytics.html">Unfetter|Analytic</a></li>
+        <li>
+          <div class="divider"></div>
+        </li>
+        <li><a href="https://www.github.com/iadgov/unfetter-analytic">Github</a></li>
+        <li><a href="analytic-architecture.html">Architecture</a></li>
+        <li><a href="analytic-setup.html">Setup</a></li>
+        <li><a href="analytic-events.html">Generate Events</a>
+          <li>
+            <li><a class='subheader' href="https://www.github.com/iadgov/unfetter-discover">Unfetter|Discover</a></li>
+            <li>
+              <div class="divider"></div>
+            </li>
+            <li><a href="https://mitre.github.io/unfetter" target="_blank">Unfetter at MITRE</a></li>
+
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center indigo-text">Unfetter|Analytic</h1>
+      <div class="row left">
+        <div class="col s12">
+          <p>
+            Welcome to the Unfetter|Analytic project. It is a reference implementation, inspired by The MITRE Corporation
+            <a
+              href="https://car.mitre.org" target="_blank">CAR</a> and <a href="https://attack.mitre.org" target="_blank">ATT&amp;CK&trade;</a> framework, and supported
+              by The <a href="https://www.mitre.org" target="_blank">MITRE Corporation</a> and the <a href="https://www.nsa.gov"
+                target="_blank">National Security Agency</a> (NSA).
+          </p>
+          <p><a href="https://attack.mitre.org" target="_blank">ATT&amp;CK&trade;</a> stands for Adversarial Tactics, Techniques
+            and Common Knowledge. It is a model and framework that describes the actions an adversary may take while attacking
+            an enterprise network. ATT&CK specifically focuses on post-exploitation of Windows host systems. Think of it
+            as a roadmap that lays out what an attacker COULD be doing on your network.
+          </p>
+          <p>
+            The <a href="https://car.mitre.org" target="_blank">CAR</a> is an effort to document and share analytic ideas
+            and lessons learned. Each CAR analytic is framed by the ATT&CK behavior(s) it is trying to identify.
+
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h2 class="header indigo-text">Features</h2>
+      <div class="row left">
+        <div class="col s12">
+          <p>
+            Unfetter is a project designed to help network defenders, cyber security professionals, and decision makers identify and
+            analyze defensive gaps in a more scalable and repeatable way. By featuring the groups<a href="https://mitre.github.io/unfetter/#footnote1_src"
+              target="_blank" name="footnote1_src"><sup>[1]</sup></a> and techniques<a href="https://mitre.github.io/unfetter/#footnote1_src"
+              target="_blank" name="footnote2_src"><sup>[2]</sup></a> of the ATT&CK model combined with the analytics, data
+            model, and sensors of CAR, Unfetter offers an opportunity for the community to come together and move beyond
+            indicators toward a behavioral-based methodology.
+          </p>
+          <p>
+            The first release is Unfetter|Analytic, a reference implementation that provides a framework for collecting events from a
+            client machine (Windows 7), supports building and testing analytics in the CAR model, and displays the alerts
+            as they reference the ATT&CK model. Unfetter|Analytic is not designed to be a production intrusion detection
+            system, but it is an educational capability for analytic developers to try, explore, and learn the concepts discussed
+            at <a href="http://mitre.github.io/unfetter" target="_blank">http://mitre.github.io/unfetter</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">launch</i></h2>
+            <h5 class="center">Getting Started</h5>
+
+            <p class="light">
+              Unfetter|Analytic is comprised of two <a href="https://www.vagrantup.com/" target="_blank">Vagrant</a> virtual
+              machine images. You will need to install <a href="https://www.vagrantup.com/" target="_blank">Vagrant</a> and
+              <a href="https://www.virtualbox.com/" target="_blank">VirtualBox</a> and download the files from this GitHub
+              project. Please see the <a href="analytic-setup.html">Setup Instructions</a> for more details.
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">code</i></h2>
+            <h5 class="center">The System</h5>
+            <p class="light">For a deep dive of Unfetter|Analytic, please see the <a href="analytic-architecture.html">Architecture</a> page.</p>  To get started playing, just go our Unfetter|Analytic <a href="https://www.github.com/iadgov/unfetter-analytic" target="_blank">page on GitHub</a>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">bug_report</i></h2>
+            <h5 class="center">Bugs and Requests</h5>
+            <p class="light">For any bug or feature requests, please open an issue here: <a href="https://github.com/iadgov/unfetter-analytic/issues">https://github.com/iadgov/unfetter/issues</a></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+
+    <div class="section">
+
+    </div>
+  </div>
+
+  <footer class="application-header">
+
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="white text-lighten-3" target="_blank" href="http://www.iad.gov">NSA Information Assurance</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+
+</body>
+
+</html>

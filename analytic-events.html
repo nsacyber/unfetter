@@ -19,136 +19,113 @@
 		<li><a href="analytic-architecture.html">Architecture</a></li>
 		<li><a href="analytic-setup.html">Setup</a></li>
 		<li><a href="analytic-events.html">Generate Events</a></li>
-
 	</ul>
 
+	<div class="navbar-fixed">
+		<nav class="application-header" role="navigation">
+			<div class="nav-wrapper container">
+				<a id="logo-container" href="http://www.unfetter.io" class="brand-logo"><img src="images/brand-logo.png"></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Unfetter|Analytic<i class="material-icons right">arrow_drop_down</i></a></li>
+					<li><a href="https://www.github.com/iadgov/unfetter-discover">Unfetter|Discover</a></li>
+					<li><a href="https://mitre.github.io/unfetter" target="_blank">Unfetter at MITRE</a></li>
+					<li><a href="stix.html">Using STIX 2.0</a></li>
+				</ul>
 
-	<nav class="application-header" role="navigation">
-		<div class="nav-wrapper container">
-			<a id="logo-container" href="http://www.unfetter.io" class="brand-logo"><img src="images/brand-logo.png"></a>
-			<ul class="right hide-on-med-and-down">
-				<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Unfetter|Analytic<i class="material-icons right">arrow_drop_down</i></a></li>
-				<li><a href="https://www.github.com/iadgov/unfetter-discover">Unfetter|Discover</a></li>
-				<li><a href="https://mitre.github.io/unfetter" target="_blank">Unfetter at MITRE</a></li>
-				<li><a href="stix.html">Using STIX 2.0</a></li>
-			</ul>
-
-			<ul id="nav-mobile" class="side-nav">
-				<li class="active subheader"> <a href="analytics.html">Unfetter|Analytic</a></li>
-				<li>
-					<div class="divider"></div>
-				</li>
-				<li><a href="https://www.github.com/iadgov/unfetter-analytic">Github</a></li>
-				<li><a href="analytic-architecture.html">Architecture</a></li>
-				<li><a href="analytic-setup.html">Setup</a></li>
-				<li><a href="analytic-events.html">Generate Events</a></li>
-				<li>
-					<div class="divider"></div>
-				</li>
-				<li><a target="_blank" href="https://www.github.com/iadgov/unfetter-discover">Unfetter|Discover</a></li>
-				<li>
-					<div class="divider"></div>
-				</li>
-				<li><a href="https://mitre.github.io/unfetter" target="_blank">Unfetter at MITRE</a></li>
-				<li>
-					<div class="divider"></div>
-				</li>
-				<li><a href="stix.html">Using STIX 2.0</a></li>
-
-			</ul>
-			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-		</div>
-	</nav>
-
-	<div class="section no-pad-bot" id="index-banner">
-		<div class="container">
-			<br><br>
-			<h1 class="header center indigo-text">Unfetter|Analytic</h1>
-			<br><br>
-			<h2 class="header indigo-text">Generate Events</h2>
-			<div class="row left">
-				<div class="col s12">
-					<p>
-						Unfetter|Analytic uses a Windows VM to generate interesting events such as process creation, user logins, and network connections.
-						The events are shipped to the Unfetter|Analytic server, Logstash is used to ingest them into Elasticsearch, and then
-						Apache Spark is used to run an analytic that generates new events (generally either alerts or items for situational
-						awareness).
-					</p>
-					<p>
-						Below is an example process to generate an event that will trigger an alert in the Windows VM.
-					</p>
-					<p>
-						Interact with the Windows VM Graphical User Interface (GUI) and start Powershell as administrator. Run the Powershell command
-						to clear the security event logs: <strong>PS C:\Windows\System32> Clear-EventLog -Logname Security</strong>
-					</p>
-					<p>
-						To see the events in Elasticsearch you can use either Kibana or the lighter weight Elasticsearch-head plugin. From the browser
-						in your host OS, go to Kibana:
-						<strong> http://localhost:5601</strong> Another option is to use the Elasticsearch-head plugin. Click on the "Browser"
-						tab on the following page:
-					</p>
-					<p>
-						<strong>http://localhost:9200/_plugin/head</strong> Events from the Windows Event Log, as well as Sysmon events, should
-						begin to populate Elasticsearch and be viewable via Kibana or Elasticsearch-head.
-					</p>
-					<p>
-						Next, generate more alerts and events. Go to your unfetter-analytic directory and ssh into your running Vagrant machine:
-
-						<strong>vagrant ssh</strong>
-					</p>
-					<p>
-						Now, go to the source directory:
-
-						<strong>cd /vagrant/src</strong> A quick ls shows a number of Python files with names similar to CAR_2016_04_002.py.
-						Each of these files is a separate analytic that you can read about in CAR. You can also look at the file itself using
-						a text editor like emacs, vim, or nano.
-					</p>
-					<p>
-						The es_helper.py helps set up and interact with Elasticsearch.
-					</p>
-					<p>
-						The main program is run_unfetter_analytic.py. This Python program will call the CAR analytic Python code you specify. Here
-						is a simple example:
-						<strong>spark-submit run_unfetter_analytic.py -c CAR_2016_04_002.py -d day 1</strong>
-					</p>
-					<p>
-						This command will use spark-submit to run the "run_unfetter_analytic.py" program, which will load and execute CAR analytic
-						CAR_2016_04_002 and will look through the last 24 hours of events.
-					</p>
-					<p>
-						After printing the Unfetter banner, run_unfetter_analytic will display the CAR name, number, and description. This will generate
-						a number of alerts once it completes.
-					</p>
-					<p>
-						The alert should now appear in Kibana. Adjusting the time interval in the upper right-hand corner may be necessary.
-					</p>
-				</div>
+				<ul id="nav-mobile" class="side-nav">
+					<li class="active subheader"> <a href="analytics.html">Unfetter|Analytic</a></li>
+					<li>
+						<div class="divider"></div>
+					</li>
+					<li><a href="https://www.github.com/iadgov/unfetter-analytic">Github</a></li>
+					<li><a href="analytic-architecture.html">Architecture</a></li>
+					<li><a href="analytic-setup.html">Setup</a></li>
+					<li><a href="analytic-events.html">Generate Events</a></li>
+					<li>
+						<div class="divider"></div>
+					</li>
+					<li><a target="_blank" href="https://www.github.com/iadgov/unfetter-discover">Unfetter|Discover</a></li>
+					<li>
+						<div class="divider"></div>
+					</li>
+					<li><a href="https://mitre.github.io/unfetter" target="_blank">Unfetter at MITRE</a></li>
+					<li>
+						<div class="divider"></div>
+					</li>
+					<li><a href="stix.html">Using STIX 2.0</a></li>
+				</ul>
+				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 			</div>
-		</div>
+		</nav>
 	</div>
-
-	<div class="container">
+	
+	<div class="page-content container">
 		<div class="section">
+			<div class="container">
+				<h1>Unfetter|Analytic</h1>
+				<h2>Generate Events</h2>
+				<div class="row">
+					<div class="col s12">
+						<p>
+							Unfetter|Analytic uses a Windows VM to generate interesting events such as process creation, user logins, and network connections.
+							The events are shipped to the Unfetter|Analytic server, Logstash is used to ingest them into Elasticsearch, and then
+							Apache Spark is used to run an analytic that generates new events (generally either alerts or items for situational
+							awareness).
+						</p>
+						<p>
+							Below is an example process to generate an event that will trigger an alert in the Windows VM.
+						</p>
+						<p>
+							Interact with the Windows VM Graphical User Interface (GUI) and start Powershell as administrator. Run the Powershell command
+							to clear the security event logs: <strong>PS C:\Windows\System32> Clear-EventLog -Logname Security</strong>
+						</p>
+						<p>
+							To see the events in Elasticsearch you can use either Kibana or the lighter weight Elasticsearch-head plugin. From the browser
+							in your host OS, go to Kibana:
+							<strong> http://localhost:5601</strong> Another option is to use the Elasticsearch-head plugin. Click on the "Browser"
+							tab on the following page:
+						</p>
+						<p>
+							<strong>http://localhost:9200/_plugin/head</strong> Events from the Windows Event Log, as well as Sysmon events, should
+							begin to populate Elasticsearch and be viewable via Kibana or Elasticsearch-head.
+						</p>
+						<p>
+							Next, generate more alerts and events. Go to your unfetter-analytic directory and ssh into your running Vagrant machine:
+							<strong>vagrant ssh</strong>
+						</p>
+						<p>
+							Now, go to the source directory:
 
-			<!--   Icon Section   -->
-			<div class="row">
-				<div class="col s12 m4">
-				</div>
-
-				<div class="col s12 m4">
-				</div>
-
-				<div class="col s12 m4">
+							<strong>cd /vagrant/src</strong> A quick ls shows a number of Python files with names similar to CAR_2016_04_002.py.
+							Each of these files is a separate analytic that you can read about in CAR. You can also look at the file itself using
+							a text editor like emacs, vim, or nano.
+						</p>
+						<p>
+							The es_helper.py helps set up and interact with Elasticsearch.
+						</p>
+						<p>
+							The main program is run_unfetter_analytic.py. This Python program will call the CAR analytic Python code you specify. Here
+							is a simple example:
+							<strong>spark-submit run_unfetter_analytic.py -c CAR_2016_04_002.py -d day 1</strong>
+						</p>
+						<p>
+							This command will use spark-submit to run the "run_unfetter_analytic.py" program, which will load and execute CAR analytic
+							CAR_2016_04_002 and will look through the last 24 hours of events.
+						</p>
+						<p>
+							After printing the Unfetter banner, run_unfetter_analytic will display the CAR name, number, and description. This will generate
+							a number of alerts once it completes.
+						</p>
+						<p>
+							The alert should now appear in Kibana. Adjusting the time interval in the upper right-hand corner may be necessary.
+						</p>
+					</div>
 				</div>
 			</div>
-
 		</div>
-		<br><br>
-
-
 	</div>
-	<footer class="application-header">
 
+	<footer class="application-header">
 		<div class="footer-copyright">
 			<div class="container">
 				Made by <a class="white text-lighten-3" target="_blank" href="http://www.iad.gov">NSA Information Assurance</a>

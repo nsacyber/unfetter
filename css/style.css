@@ -10,7 +10,8 @@
   padding: 0 15px;
 }
 .icon-block .material-icons {
-	font-size: inherit;
+	/*font-size: inherit;*/
+    font-size: 40px;
 }
 
 .indigo.darken-5 {
@@ -27,4 +28,79 @@
     bottom: 0;
     left: 0;
     width: 100%;
+}
+
+
+
+body {
+    background: rgba(172, 172, 172, 0.1);
+}
+
+h1 {
+    color: #242d3b;
+    font: 300 50px/50px Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 2.1rem 0 1.68rem;
+}
+
+h2 {
+    color: #00a8c9;
+    font: 300 30px/30px Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 1.78rem 0 1.424rem;
+}
+
+h3 {
+    color: #242d3b;
+    font: 300 25px/25px Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 1.46rem 0 1.168rem;
+}
+
+h5 {
+    color: #242d36;
+    font: 400 1.64rem/1.64rem Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 0.82rem 0 0.656rem;
+}
+
+p {
+    color: #242d36;
+    font: 400 15px/25px Roboto, Arial, sans-serif;
+    margin: 1.5rem 0;
+}
+
+pre {
+    padding: 15px 20px;
+    overflow: auto;
+    white-space: pre;
+    font: 400 15px/25px Monospace, Consolas, sans-serif;
+    background: rgba(172, 172, 172, 0.1);
+    border: 1px solid rgba(172, 172, 172, 0.2);
+}
+
+.page-content {
+    background: white;
+    padding: 100px 0 50px;
+}
+.page-content a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 992px) {
+    .page-content {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+.section {
+    padding: 0;
+}
+
+.collection {
+    background: #ecf0f4;
+}
+.collection .collection-item {
+    background: none;
 }

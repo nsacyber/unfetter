@@ -14,146 +14,151 @@
 </head>
 
 <body>
-
 	<ul id='dropdown1' class='dropdown-content'>
 		<li><a href="analytics.html">Unfetter|Analytic</a></li>
 		<li><a href="https://www.github.com/iadgov/unfetter-analytic">Github</a></li>
 		<li><a href="analytic-architecture.html">Architecture</a></li>
 		<li><a href="analytic-setup.html">Setup</a></li>
 		<li><a href="analytic-events.html">Generate Events</a></li>
-
 	</ul>
 
+	<div class="navbar-fixed">
+		<nav class="application-header" role="navigation">
+			<div class="nav-wrapper container">
+				<a id="logo-container" href="http://www.unfetter.io" class="brand-logo"><img src="images/brand-logo.png"></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Unfetter|Analytic<i class="material-icons right">arrow_drop_down</i></a></li>
+					<li><a href="https://www.github.com/iadgov/unfetter-discover">Unfetter|Discover</a></li>
+					<li><a href="https://mitre.github.io/unfetter" target="_blank">Unfetter at MITRE</a></li>
+					<li><a href="stix.html">Using STIX 2.0</a></li>
+				</ul>
 
-	<nav class="application-header" role="navigation">
-		<div class="nav-wrapper container">
-			<a id="logo-container" href="http://www.unfetter.io" class="brand-logo"><img src="images/brand-logo.png"></a>
-			<ul class="right hide-on-med-and-down">
-				<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Unfetter|Analytic<i class="material-icons right">arrow_drop_down</i></a></li>
-				<li><a href="https://www.github.com/iadgov/unfetter-discover">Unfetter|Discover</a></li>
-				<li><a href="https://mitre.github.io/unfetter" target="_blank">Unfetter at MITRE</a></li>
-				<li><a href="stix.html">Using STIX 2.0</a></li>
-			</ul>
+				<ul id="nav-mobile" class="side-nav">
+					<li class="active subheader"> <a href="analytics.html">Unfetter|Analytic</a></li>
+					<li>
+						<div class="divider"></div>
+					</li>
+					<li><a href="https://www.github.com/iadgov/unfetter-analytic">Github</a></li>
+					<li><a href="analytic-architecture.html">Architecture</a></li>
+					<li><a href="analytic-setup.html">Setup</a></li>
+					<li><a href="analytic-events.html">Generate Events</a></li>
+					<li>
+						<div class="divider"></div>
+					</li>
+					<li><a target="_blank" href="https://www.github.com/iadgov/unfetter-discover">Unfetter|Discover</a></li>
+					<li>
+						<div class="divider"></div>
+					</li>
+					<li><a href="https://mitre.github.io/unfetter" target="_blank">Unfetter at MITRE</a></li>
+					<li>
+						<div class="divider"></div>
+					</li>
+					<li><a href="stix.html">Using STIX 2.0</a></li>
 
-			<ul id="nav-mobile" class="side-nav">
-				<li class="active subheader"> <a href="analytics.html">Unfetter|Analytic</a></li>
-				<li>
-					<div class="divider"></div>
-				</li>
-				<li><a href="https://www.github.com/iadgov/unfetter-analytic">Github</a></li>
-				<li><a href="analytic-architecture.html">Architecture</a></li>
-				<li><a href="analytic-setup.html">Setup</a></li>
-				<li><a href="analytic-events.html">Generate Events</a></li>
-				<li>
-					<div class="divider"></div>
-				</li>
-				<li><a target="_blank" href="https://www.github.com/iadgov/unfetter-discover">Unfetter|Discover</a></li>
-				<li>
-					<div class="divider"></div>
-				</li>
-				<li><a href="https://mitre.github.io/unfetter" target="_blank">Unfetter at MITRE</a></li>
-				<li>
-					<div class="divider"></div>
-				</li>
-				<li><a href="stix.html">Using STIX 2.0</a></li>
-
-			</ul>
-			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+				</ul>
+				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+			</div>
+		</nav>
+	</div>
+	
+	<div class="page-content container">
+		<div class="section">
+			<div class="container">
+				<h1>Using STIX 2.0</h1>
+				<div class="row">
+					<div class="col s12">
+						<p>
+							The <a href="https://github.com/iadgov/unfetter-discover" target="_blank">Unfetter|Discover</a> project is built on
+							the <a href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti-stix" target="_blank">OASIS Open Standard</a>
+							called <a href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti-stix" target="_blank">STIX</a>. STIX is a
+							standardized language for representing structure cyber threat information. Unfetter|Discover is prototyping the new
+							<a href="https://github.com/STIXProject/specifications/wiki/Work-Product:-STIX-2.0-Specification" target="_blank">STIX 2.0</a>
+							specification that is still in Release Candidate.
+						</p>
+						<p>
+							STIX 2.0 was picked over the approved standard version 1.2.1 because STIX 2.0 uses JSON for its data representation
+							rather than XML. This technology fits nicely with the NodeJS based software stack in Unfetter|Discover. Intending to
+							just represent some of the data in STIX, the team eventually decided to implement all of Unfetter|Discover's backend
+							and REST interfaces fully compliant with the STIX 2.0 schema.</p>
+						<p>
+							<a href="https://github.com/iadgov/unfetter-discover/tree/v0.1.1" target="_blank">Release 0.1</a> of Unfetter|Discover
+							was a large monolithic program built on a <a href="https://www.vagrantup.com" target="_blank">Vagrant</a> provisioned
+							Virtual Machine. However, it became clear that the STIX 2.0 backend should be available to anyone wanting to store
+							and retrieve STIX 2.0 data their own applications. Release 0.2 of Unfetter|Discover is being rearchitected to support
+							microservices model using <a href="http://www.docker.com/" target="_blank">Docker</a> containers. All Unfetter Docker
+							containers are available on the <a href="https://hub.docker.com/r/unfetter/" target="_blank">Unfetter organization on Docker Hub</a>.
+							The STIX 2.0 microservices containers and software can be found on the GitHub repository
+							<a href="https://github.com/iadgov/cti-stix-services" target="_blank">cti-stix-services</a>.
+							The different containers in this repository are described below.
+						</p>
+					</div>
+				</div>
+			</div>
 		</div>
-	</nav>
 
-	<div class="section no-pad-bot" id="index-banner">
 		<div class="container">
-			<br><br>
-			<h1 class="header center indigo-text">Using STIX 2.0</h1>
-			<div class="row left">
-				<div class="col s12">
-					<p>
-						The <a href="https://github.com/iadgov/unfetter-discover" target="_blank">Unfetter|Discover</a> project is built on
-						the <a href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti-stix" target="_blank">OASIS Open Standard</a>						called
-						<a href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti-stix" target="_blank">STIX</a>. STIX is a
-						standardized language for representing structure cyber threat information. Unfetter|Discover is prototyping the new
-						<a href="https://github.com/STIXProject/specifications/wiki/Work-Product:-STIX-2.0-Specification" target="_blank">STIX 2.0</a>						specification that is still in Release Candidate.
-					</p>
-					<p>STIX 2.0 was picked over the approved standard version 1.2.1 because STIX 2.0 uses JSON for its data representation
-						rather than XML. This technology fits nicely with the NodeJS based software stack in Unfetter|Discover. Intending to
-						just represent some of the data in STIX, the team eventually decided to implement all of Unfetter|Discover's backend
-						and REST interfaces fully compliant with the STIX 2.0 schema.</p>
-					<p><a href="https://github.com/iadgov/unfetter-discover/tree/v0.1.1" target="_blank">Release 0.1</a> of Unfetter|Discover
-						was a large monolithic program built on a <a href="https://www.vagrantup.com" target="_blank">Vagrant</a> provisioned
-						Virtual Machine. However, it became clear that the STIX 2.0 backend should be available to anyone wanting to store
-						and retrieve STIX 2.0 data their own applications. Release 0.2 of Unfetter|Discover is being rearchitected to support
-						microservices model using <a href="http://www.docker.com/" target="_blank">Docker</a> containers. All Unfetter Docker
-						containers are available on the <a href="https://hub.docker.com/r/unfetter/" target="_blank">Unfetter organization on Docker Hub</a>.
-						The STIX 2.0 microservices containers and software can be found on the GitHub repository <a href="https://github.com/iadgov/cti-stix-services"
-							target="_blank">cti-stix-services</a>. The different containers in this repository are described below.</p>
-
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="section">
-			<!--   Icon Section   -->
-			<div class="row">
-				<div class="col s12 m4">
-					<div class="icon-block">
-						<h2 class="center light-blue-text"><i class="material-icons">info</i></h2>
-						<h5 class="center">cti-stix-store</h5>
-
-						<p class="light">
-							The Docker container <a href="https://hub.docker.com/r/unfetter/cti-stix-store/" target="_blank">cti-stix-store</a>							focuses on storage and retrieval of STIX 2.0 objects through a REST interface. The GET, POST, DELETE, and PATCH methods
-							uses the <a href="http://jsonapi.org/" target="_blank">json:api</a> specification to address how to create, fetch,
-							modify and delete STIX 2.0 objects. The data itself is stored based on the <a href="https://github.com/oasis-open/cti-stix2-json-schemas"
-								target="_blank">STIX 2.0 schemas</a>. To run cti-stix-store, install Docker and run "docker up unfetter/cti-stix-store"
-						</p>
-						<p class="light">The REST interface that cti-stix-store uses can be explorered through <a href="http://petstore.swagger.io/?url=https://iadgov.github.io/unfetter/swagger.json"
-								target="_blank">Swagger</a>.
+			<div class="section">
+				<!--   Icon Section   -->
+				<div class="row">
+					<div class="col s12 m4">
+						<div class="icon-block">
+							<h2 class="center light-blue-text"><i class="material-icons">info</i></h2>
+							<h5 class="center">cti-stix-store</h5>
+							<p class="light">
+								The Docker container <a href="https://hub.docker.com/r/unfetter/cti-stix-store/" target="_blank">cti-stix-store</a>
+								focuses on storage and retrieval of STIX 2.0 objects through a REST interface. The GET, POST, DELETE, and PATCH methods
+								uses the <a href="http://jsonapi.org/" target="_blank">json:api</a> specification to address how to create, fetch,
+								modify and delete STIX 2.0 objects. The data itself is stored based on the
+								<a href="https://github.com/oasis-open/cti-stix2-json-schemas" target="_blank">STIX 2.0 schemas</a>.
+								To run cti-stix-store, install Docker and run "docker up unfetter/cti-stix-store"
+							</p>
+							<p class="light">The REST interface that cti-stix-store uses can be explorered through
+								<a href="http://petstore.swagger.io/?url=https://iadgov.github.io/unfetter/swagger.json" target="_blank">Swagger</a>.
+							</p>
+						</div>
 					</div>
-				</div>
 
-				<div class="col s12 m4">
-					<div class="icon-block">
-						<h2 class="center light-blue-text"><i class="material-icons">zoom_in</i></h2>
-						<h5 class="center">cti-stix-discover</h5>
+					<div class="col s12 m4">
+						<div class="icon-block">
+							<h2 class="center light-blue-text"><i class="material-icons">zoom_in</i></h2>
+							<h5 class="center">cti-stix-discover</h5>
 
-						<p class="light">Unfetter|Discover is focused on providing context to Cyber Threat Intelligence data by creating and managing relationships
-							between that data. Thus, for Unfetter|Discover, the relationships between STIX 2.0 data is crucial to the product.
-							Unfetter|Discover will soon release the cti-stix-discover Docker container from the <a href="https://github.com/iadgov/cti-stix-services"
-								target="_blank">cti-stix-services</a> GitHub repo and <a href="https://hub.docker.com/r/unfetter/cti-stix-store" tarrget="_blank">Unfetter on DockerHub</a>.
-						</p>
-						<p class="light">This container uses a REST interfacace to query STIX 2.0 objects and their related objects. The cti-stix-discover container
-							is a "stateless" microservice container and will rely on the cti-stix-store container to actually store the data.
-						</p>
+							<p class="light">Unfetter|Discover is focused on providing context to Cyber Threat Intelligence data by creating and managing relationships
+								between that data. Thus, for Unfetter|Discover, the relationships between STIX 2.0 data is crucial to the product.
+								Unfetter|Discover will soon release the cti-stix-discover Docker container from the
+								<a href="https://github.com/iadgov/cti-stix-services" target="_blank">cti-stix-services</a> GitHub repo and
+								\<a href="https://hub.docker.com/r/unfetter/cti-stix-store" tarrget="_blank">Unfetter on DockerHub</a>.
+							</p>
+							<p class="light">
+								This container uses a REST interfacace to query STIX 2.0 objects and their related objects. The cti-stix-discover container
+								is a "stateless" microservice container and will rely on the cti-stix-store container to actually store the data.
+							</p>
+						</div>
 					</div>
-				</div>
 
-				<div class="col s12 m4">
-					<div class="icon-block">
-						<h2 class="center light-blue-text"><i class="material-icons">dashboard</i></h2>
-						<h5 class="center">cti-stix-ui</h5>
-
-						<p class="light">Our third CTI STIX container will be cti-stix-ui. This container will provide a UI for creating, editing and deleting
-							STIX 2.0 objects and relationships between them. This container will also be part of the <a href="https://hub.docker.com/r/unfetter/cti-stix-store"
-								target="_blank">cti-stix-services</a> GitHub repo.
-						</p>
+					<div class="col s12 m4">
+						<div class="icon-block">
+							<h2 class="center light-blue-text"><i class="material-icons">dashboard</i></h2>
+							<h5 class="center">cti-stix-ui</h5>
+							<p class="light">Our third CTI STIX container will be cti-stix-ui. This container will provide a UI for creating, editing and deleting
+								STIX 2.0 objects and relationships between them. This container will also be part of the
+								<a href="https://hub.docker.com/r/unfetter/cti-stix-store" target="_blank">cti-stix-services</a> GitHub repo.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
 
-		</div>
-		<br><br>
-
-		<div class="section">
-			<a href="http://www.oasis-open.org"> <img align="middle" src="http://www.oasis-open.org/images/oasis_member2004.jpg" width="140" height="45" border="0" alt="www.oasis-open.org"
-					title="www.oasis-open.org"> </a>
+			<div class="section">
+				<a href="http://www.oasis-open.org">
+					<img align="middle" src="http://www.oasis-open.org/images/oasis_member2004.jpg" width="140"
+						 height="45" border="0" alt="www.oasis-open.org" title="www.oasis-open.org">
+				</a>
+			</div>
 		</div>
 	</div>
-
-
+	
 	<footer class="application-header">
-
 		<div class="footer-copyright">
 			<div class="container">
 				Made by <a class="white text-lighten-3" target="_blank" href="http://www.iad.gov">NSA Information Assurance</a>

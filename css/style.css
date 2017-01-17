@@ -30,7 +30,9 @@
     width: 100%;
 }
 
-
+.brand-logo img {
+    margin-top: 12px;
+}
 
 body {
     background: rgba(172, 172, 172, 0.1);

@@ -14,26 +14,35 @@
 
 <body>
 	<ul id='dropdown1' class='dropdown-content'>
-		<li><a href="analytics.html">Unfetter|Analytic</a></li>
+		<li><a href="analytics.html">Unfetter Analytic</a></li>
 		<li><a href="https://github.com/unfetter-analytic/unfetter">GitHub</a></li>
 		<li><a href="analytic-architecture.html">Architecture</a></li>
 		<li><a href="analytic-setup.html">Setup</a></li>
 		<li><a href="analytic-events.html">Generate Events</a></li>
 	</ul>
 
+
+	<ul id='dropdown2' class='dropdown-content'>
+          <li><a href="discover_overview.html">Unfetter Discover Overview</a></li>
+          <li><a href="discover_user_install.html">User install (Docker Hub)</a></li>
+          <li><a href="https://www.github.com/unfetter-discover/unfetter">Developer install (GitHub)</a></li>
+          <li><a href="UnfetterDiscoverWebGUI.html" width="800px" height="2100px">UserGuide </a></li>
+        </ul>
+
+
 	<div class="navbar-fixed">
 		<nav class="application-header" role="navigation">
 			<div class="nav-wrapper container">
 				<a id="logo-container" href="http://www.unfetter.io" class="brand-logo"><img src="images/brand-logo.png"></a>
 				<ul class="right hide-on-med-and-down">
-					<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Unfetter|Analytic<i class="material-icons right">arrow_drop_down</i></a></li>
-					<li><a href="https://github.com/unfetter-discover/unfetter">Unfetter|Discover</a></li>
+					<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Unfetter Analytic<i class="material-icons right">arrow_drop_down</i></a></li>
+					<li><a class="dropdown-button" href="#!" data-activates="dropdown2">Unfetter Discover<i class="material-icons right">arrow_drop_down</i></a></li>
 					<li><a href="https://mitre.github.io/unfetter" target="_blank">Unfetter at MITRE</a></li>
 					<li><a href="stix.html">Using STIX 2.0</a></li>
 				</ul>
 
 				<ul id="nav-mobile" class="side-nav">
-					<li class="active subheader"> <a href="analytics.html">Unfetter|Analytic</a></li>
+					<li class="active subheader"> <a href="analytics.html">Unfetter Analytic</a></li>
 					<li>
 						<div class="divider"></div>
 					</li>
@@ -44,7 +53,7 @@
 					<li>
 						<div class="divider"></div>
 					</li>
-					<li><a target="_blank" href="https://github.com/unfetter-discover/unfetter">Unfetter|Discover</a></li>
+					<li><a target="_blank" href="https://github.com/unfetter-discover/unfetter">Unfetter Discover</a></li>
 					<li>
 						<div class="divider"></div>
 					</li>
@@ -62,7 +71,7 @@
 	<div class="page-content container">
 		<div class="section">
 			<div class="container">
-				<h1>Unfetter|Analytic Architecture</h1>
+				<h1>Unfetter Analytic Architecture</h1>
 				<div class="row">
 					<div class="col s12">
 						<p>
@@ -74,11 +83,11 @@
 						<p>
 							On the left-hand side of the diagram, you see the Windows System, or the "victim machine."
 							<a href="https://www.nxlog.co" target="_blank">NxLog</a> ships standard Windows events to the
-							Unfetter|Analytic system. The Windows system, once built, runs
+							Unfetter Analytic system. The Windows system, once built, runs
 							<a href="https://technet.microsoft.com/en-us/sysinternals/sysmon">Microsoft Sysmon</a>.
 						</p>
 						<p>
-							On the right, the Unfetter|Analytic server is running an <a href="https://www.elastic.co/" target="_blank">Elasticsearch, Logstash, Kibana</a>						software stack and <a href="http://spark.apache.org/" target="_blank">Apache Spark</a> as the main analytic system.
+							On the right, the Unfetter Analytic server is running an <a href="https://www.elastic.co/" target="_blank">Elasticsearch, Logstash, Kibana</a>						software stack and <a href="http://spark.apache.org/" target="_blank">Apache Spark</a> as the main analytic system.
 							Event logs from the victim system and generated alerts are stored in Elasticsearch and are viewable through Kibana
 							or through the Elasticsearch head plugin.
 						</p>
@@ -97,9 +106,9 @@
 							collect and analyze data, as opposed to the more robust reliability, security, and scalability requirements needed
 							in a production system. The system was designed to make personalized data source additions easier for experimentation
 							purposes, and the virtual machine is fully customizable. A production environment would utilize components that are
-							the same or similar to what is contained in the Unfetter|Analytic virtual machine: a backend data store (such as Elasticsearch),
+							the same or similar to what is contained in the Unfetter Analytic virtual machine: a backend data store (such as Elasticsearch),
 							log parsing (such as Logstash), and a user interface (such as Kibana). Depending on organization-specific requirements,
-							features that are not in the Unfetter|Analytic VM (e.g., a durable message queue, such as Apache Kafka) may need to
+							features that are not in the Unfetter Analytic VM (e.g., a durable message queue, such as Apache Kafka) may need to
 							be added.
 						</p>
 					</div>

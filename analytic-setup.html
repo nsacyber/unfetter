@@ -14,26 +14,34 @@
 
 <body>
 	<ul id='dropdown1' class='dropdown-content'>
-		<li><a href="analytics.html">Unfetter|Analytic</a></li>
+		<li><a href="analytics.html">Unfetter Analytic</a></li>
 		<li><a href="https://github.com/unfetter-analytic/unfetter">GitHub</a></li>
 		<li><a href="analytic-architecture.html">Architecture</a></li>
 		<li><a href="analytic-setup.html">Setup</a></li>
 		<li><a href="analytic-events.html">Generate Events</a></li>
 	</ul>
 
+	<ul id='dropdown2' class='dropdown-content'>
+          <li><a href="discover_overview.html">Unfetter Discover Overview</a></li>
+          <li><a href="discover_user_install.html">User install (Docker Hub)</a></li>
+          <li><a href="https://www.github.com/unfetter-discover/unfetter">Developer install (GitHub)</a></li>
+          <li><a href="UnfetterDiscoverWebGUI.html" width="800px" height="2100px">UserGuide </a></li>
+        </ul>
+
+
 	<div class="navbar-fixed">
 		<nav class="application-header" role="navigation">
 			<div class="nav-wrapper container">
 				<a id="logo-container" href="http://www.unfetter.io" class="brand-logo"><img src="images/brand-logo.png"></a>
 				<ul class="right hide-on-med-and-down">
-					<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Unfetter|Analytic<i class="material-icons right">arrow_drop_down</i></a></li>
-					<li><a href="https://github.com/unfetter-discover/unfetter">Unfetter|Discover</a></li>
+					<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Unfetter Analytic<i class="material-icons right">arrow_drop_down</i></a></li>
+					<li><a class="dropdown-button" href="#!" data-activates="dropdown2">Unfetter Discover<I class="material-icons right">arrow_drop_down</i></a></li>
 					<li><a href="https://mitre.github.io/unfetter" target="_blank">Unfetter at MITRE</a></li>
 					<li><a href="stix.html">Using STIX 2.0</a></li>
 				</ul>
 
 				<ul id="nav-mobile" class="side-nav">
-					<li class="active subheader"> <a href="analytics.html">Unfetter|Analytic</a></li>
+					<li class="active subheader"> <a href="analytics.html">Unfetter Analytic</a></li>
 					<li>
 						<div class="divider"></div>
 					</li>
@@ -44,7 +52,7 @@
 					<li>
 						<div class="divider"></div>
 					</li>
-					<li><a target="_blank" href="https://github.com/unfetter-discover/unfetter">Unfetter|Discover</a></li>
+					<li><a target="_blank" href="https://github.com/unfetter-discover/unfetter">Unfetter Discover</a></li>
 					<li>
 						<div class="divider"></div>
 					</li>
@@ -63,7 +71,7 @@
 	<div class="page-content container">
 		<div class="section">
 			<div class="container">
-				<h1>Unfetter|Analytic Setup</h1>
+				<h1>Unfetter Analytic Setup</h1>
 				<div class="row">
 					<div class="col s12">
 						<p>
@@ -75,7 +83,7 @@
 				<div class="row">
 					<div class="col s12">
 						<p>
-							The Unfetter|Analytic server side system is built using Docker to easily spin up containers for running each of the desired applications.  
+							The Unfetter Analytic server side system is built using Docker to easily spin up containers for running each of the desired applications.  
 							These instructions show how to setup the Windows Victim system with Vagrant. Services will be configured and started, Windows event
 							logs and Sysmon data will be forwarded and ingested, and Kibana dashboards will be running, analytics will run and alerts will be pushed to 
 							Unfetter-Discover.
@@ -90,7 +98,7 @@
 				<div class="row">
 					<div class="col s12">
 						<p>
-							The Unfetter|Analytic system was tested on Windows 7 Professional and Windows 10 Home host operating systems (OSes) using
+							The Unfetter Analytic system was tested on Windows 7 Professional and Windows 10 Home host operating systems (OSes) using
 							VirtualBox. However, any OS that supports Vagrant should work, since both systems run in virtual machines (VMs).
 						</p>
 						<p>
@@ -137,9 +145,9 @@
 				<h2>Starting The Server</h2>
 				<div class="row">
 					<div class="col s12">
-						<p>The Unfetter|Analytic Linux VM contains the ELK stack, Apache Spark, and the Python (PySpark) files that run the analytics.</p>
+						<p>The Unfetter Analytic Linux VM contains the ELK stack, Apache Spark, and the Python (PySpark) files that run the analytics.</p>
 						<p>The Windows VM is a Windows 7 32-bit with Microsoft Sysmon and Nxlog installed. Nxlog is already configured to send
-							logs to Unfetter|Analytic. </p>
+							logs to Unfetter Analytic. </p>
 						<p>There are a number of GitHub projects needed to run the Unfetter Analytic system.  They are all found under 
 							<a href="https://www.github.com/unfetter-analytic" target="_blank">www.github.com/unfetter-analytic</a></p>.  You can easily clone all those projects
 							in a couple of easy steps:</a>
@@ -223,7 +231,7 @@
 				<div class="row">
 					<div class="col s12">
 						<p>
-							Unfetter|Analytic provides three interfaces to see your collected data. Kibana provides a full-featured interface to perform
+							Unfetter Analytic provides three interfaces to see your collected data. Kibana provides a full-featured interface to perform
 							complex searches. You can access it at: <strong>https://localhost</strong>
 						</p>
 						<p>

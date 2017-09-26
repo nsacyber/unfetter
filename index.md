@@ -6,7 +6,7 @@ layout: front-page
 
 <p>When the threat hits, cyber security professionals working at the tactical, operational, and strategic levels need to work together quickly and effectively to enable a common cyber security strategy and protect against the adversary. The ability to do this in a repeatable and scalable way depends on an organization's agility to discover gaps in their security posture, understand adversary tradecraft, and communicate defensive courses of action.</p>
 <p>Unfetter enhances your current assessment methodology and helps you figure out what to do next by focusing on the key relationships in your data.  Inspired by MITRE's <a href="https://car.mitre.org/wiki/Main_Page">CAR</a> and <a href="https://attack.mitre.org" target="_blank">ATT&amp;CK&#8482;</a> framework, Unfetter shifts the focus beyond indicators to a more behavioral based methodology that allows you to advance your cyber security posture in a measurable and meaningful way.</p>
-<p align="middle"><img align="middle" height="600" class="brand-logo" src="images/unfetter-shield.svg"></p>
+<p align="middle"><img align="middle" class="brand-logo" src="images/unfetter-shield.svg"></p>
 <div align="left">
 <h2><i class="material-icons">group</i> Leveraging the Community
 <p>

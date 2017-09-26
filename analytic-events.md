@@ -1,4 +1,10 @@
 
+---
+title: Generating Unfetter Analytic Events
+layout: front-page
+permalink: analytic-events.html
+---
+
 Unfetter Analytic uses a Windows VM to generate interesting events such as process creation, user logins, and network connections.The events are shipped to the Unfetter Analytic server, Logstash is used to ingest them into Elasticsearch, and then Apache Spark is used to run an analytic that generates new events (generally either alerts or items for situational awareness).
 
 Below is an example process to generate an event that will trigger an alert in the Windows VM.

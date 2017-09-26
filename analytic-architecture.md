@@ -1,3 +1,9 @@
+---
+title: Unfetter Analytic Architecture
+layout: front-page
+permalink: analytic-architecture.html
+---
+
 This reference implementation provides a framework for collecting events from a client machine (Windows 7), and performing [Cyber Analytics Repository](https://car.mitre.org) (CAR) analytics to detect potential adversary activity.
 
 <img class="responsive-img" src="images/unfetter-architecture-diagram.png">

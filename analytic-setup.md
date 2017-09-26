@@ -1,3 +1,9 @@
+---
+title: Unfetter Analytic Setup
+layout: front-page
+permalink: analytic-setup.html
+---
+
 Setup PageThe Unfetter Analytic server side system is built using Docker to easily spin up containers for running each of the desired applications.  
 
 These instructions show how to setup the Windows Victim system with Vagrant. Services will be configured and started, Windows event logs and Sysmon data will be forwarded and ingested, and Kibana dashboards will be running, analytics will run and alerts will be pushed to Unfetter-Discover.

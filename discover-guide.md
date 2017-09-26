@@ -4,8 +4,7 @@ layout: front-page
 permalink: discover-guide.html
 ---
 
-<div class=row>
-    <div class="col-sm-12">
+
 Welcome to the Unfetter Discover web application user guide. This guide is divided into three sections.  Assessment Dashboard shows how security professionals can assess their current network environments, and visualize their gaps and high-risk areas.  Intrusion Set Dashboard describes how Threat Reports can look at similarities and differences between Intrusion Sets and Threat Actors, and determine proper mitigations.  Settings shows how to enter data into Unfetter.
 
 ## Overview
@@ -57,6 +56,13 @@ The pie graphs on the left-hand side provide a graphical representation of the R
 
 Let's click the "collection" link in the leftmost column, which will expand the Collection Kill Chain into all the specific MITRE ATT&CK Patterns.
 
+
+---
+title: Unfetter Discover User Guide
+layout: front-page
+permalink: discover-guide.html
+---
+
 ![Assessment Dashboard Details](https://iadgov.github.io/unfetter/images/assessment-dashboard-detail.png){:width="700px"}
 
 The leftmost column has stayed the same.  The middle column shows all the ATTACK Patterns that are part of the Collection kill chain.  The group under "Phase Collection" is those that have related Mitigations that were assessed.  Those under "unassessed attack patterns" do not have Mitigations.
@@ -94,5 +100,3 @@ The Edit button will allow you to Edit the Indicator, changing any value, select
 ![STIX Menu](https://iadgov.github.io/unfetter/images/indicator-edit.png){:width="700px"}.
 
 All STIX data can be changed using these screens.
-
-</div></div>

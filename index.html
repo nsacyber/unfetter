@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Unfetter Project</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!--Roboto Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,600,700,900" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="./unfetter.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+<div class="body-bg"></div>
+<nav class="navbar navbar-dark bg-blue fixed-top">
+    <a class="navbar-brand" href="./index.html"><img src="images/uf_icon.svg" alt="Unfetter" width="50px" height="50px"></a>
+
+    <ul class="navbar-nav d-none d-sm-block ml-auto px-5">
+        <li class="nav-item active">
+            <a class="nav-link" href="./index.html">UNFETTER <span class="sr-only">(current)</span></a>
+        </li>
+    </ul>
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#unfetterNavbar">
+        <span> </span>
+        <span> </span>
+        <span> </span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="unfetterNavbar">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col text-center">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="analytics-overview.html">Analytic Overview</a>
+            </li>
+            <li>
+                <div class="sub-nav">
+                <a class="nav-link" href="https://github.com/unfetter-analytic/unfetter">GitHub</a>
+                        <a class="nav-link" href="analytic-architecture.html">Architecture</a>
+                        <a class="nav-link" href="analytic-setup.html">Setup</a>
+                        <a class="nav-link" href="analytic-events.html">Generate Events</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="discover-overview.html">Discover Overview </a>
+            </li>
+            <li>
+                <div class="sub-nav">
+                    <a class="nav-link" href="discover-guide.html">User Guide </a>
+                    <a class="nav-link" href="https://www.github.com/unfetter-discover/unfetter">Installation</a>
+                    <a class="nav-link" href="https://www.github.com/unfetter-discover/unfetter/wiki">Developer Instructions</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"  href="https://mitre.github.io/unfetter">Unfetter at MITRE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="stix.html">Using STIX 2.0</a>
+            </li>
+        </ul>
+    </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid mt-5 mb-3 my-sm-5"><!--INTRO/HEADER-->
+    <div class="row justify-content-center">
+        <div class="col-sm-8 text-center">
+            <h1 class="hero">The Unfetter Project</h1>
+            <p class="lead">Discover and analyze gaps in your security posture.</p>
+        </div>
+        <div class="col-12 text-center header-img pt-sm-5">
+            <img class="img-fluid" src="./images/unfetter_header3_sm_lt.png" alt="">
+        </div>
+    </div>
+</div><!-- /.container -->
+
+<div class="container my-lg-5 pb-5 py-lg-5"><!--FIRST TEXT BLOCK-->
+    <div class="row">
+        <div class="col text-center">
+            <h1>Discover Gaps. Analytics in Practice. Leverage the Community.</h1>
+        </div>
+    </div>
+    <div class="row mt-sm-3 justify-content-center">
+        <div class="col-lg-9">
+            <p>
+                When the threat hits, cybersecurity professionals working at the tactical,
+                operational, and strategic levels need to work together quickly and effectively to
+                enable a common cybersecurity strategy that protects against the adversary. To do
+                this in a repeatable, scalable way depends on an organization’s ability to discover
+                and mitigate gaps in their posture, understand adversary tradecraft, and implement and communicate
+                defensive courses of action.
+            </p>
+        </div>
+    </div>
+    <div class="row py-sm-5 px-3 pb-5 mb-5">
+        <div class="col-sm-6 mb-sm-5">
+            <h4>We are an experiment (right now)</h4>
+            <p>
+                Unfetter is a community-driven suite of open source tools
+                leveraging the <a href="https://attack.mitre.org/wiki/Main_Page">MITRE ATT&CK™</a> framework,
+                shifting the
+                focus from indicators to a behavior-based
+                methodology. This allows you to more effectively assess
+                your risk, advance your security posture, and implement
+                mitigations in a systemic, measurable, and meaningful way.
+            </p>
+        </div>
+        <div class="col-sm-6 mb-5">
+            <h4>Cyber professionals can use Unfetter to:</h4>
+            <ul>
+                <li>Establish a better baseline security posture</li>
+                <li>Explore relationships to rapidly identify gaps</li>
+                <li>Evaluate and compare defensive courses of action</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid text-center divider-image"><!--DIVIDER IMAGE-->
+    <div class="row align-items-end divider-row1">
+        <div class="col-6 py-5 mb-5">
+            <img class="img-fluid" src="./images/pretties_2.png" alt="">
+        </div>
+        <div class="col-6">
+            <img class="img-fluid" src="./images/pretties_1.png" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-black my-sm-5 pb-sm-5 pb-3">
+    <div class="container py-5"><!--FIRST CAROUSEL-->
+        <div class="row justify-content-center py-sm-5 py-3">
+            <div class="col-lg-8 text-center">
+                <h1><b>Unfetter Discover:</b> Analyze security
+                    gaps and explore adversary tradecraft</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <h1>Assessments</h1>
+            </div>
+        </div>
+        <div class="row mt-lg-3 justify-content-center">
+            <div class="col-lg-9">
+                <p class="text-light text-center">
+                    Assess the mitigations, analytics and sensors in your environment and see which MITRE
+                    ATT&CK™ Techniques are a threat. <a href="https://iadgov.github.io/unfetter/discover-guide.html">Learn
+                    more</a></p>
+            </div>
+        </div>
+
+        <div class="row text-center my-3">
+            <div class="col mx-auto">
+                <ul class="nav nav-pills center-pills">
+                    <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#home">SURVEY</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#menu1">REPORT OVERVIEW</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#menu2">REPORT DASHBOARD</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#menu3">REPORT DETAIL</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade show active">
+                <div class="row">
+                    <div class="col-lg-4 order-lg-2 mt-lg-5">
+                        <h2 class="text-center text-lg-left">Survey</h2>
+                        <p class="text-center text-lg-left">
+                            Evaluate your infrastructure’s mitigations, analytics, and sensors through a simple survey. Visualize your gaps through the lens of MITRE’s ATT&CK™ framework.
+                        </p>
+                    </div>
+                    <div class="col-lg-8 order-lg-1 my-lg-3 mb-3">
+                        <img class="d-block w-100" src="./images/slides/UF_Monitor_survey.png" alt="Survey">
+                    </div>
+                </div>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <div class="row">
+                    <div class="col-lg-4 order-lg-2 mt-lg-5">
+                        <h2 class="text-center text-lg-left">Report Overview</h2>
+                        <p class="text-center text-lg-left">
+                            Explore a snapshot of your survey answers to quickly measure your risk. This overview allows leadership to compare options and focus resources effectively.
+                        </p>
+                    </div>
+                    <div class="col-lg-8 order-lg-1 my-lg-3 mb-3">
+                        <img class="d-block w-100" src="./images/slides/UF_Monitor_report_overview.png"
+                             alt="Report Overview">
+                    </div>
+                </div>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <div class="row">
+                    <div class="col-lg-4 order-lg-2 mt-lg-5">
+                        <h2 class="text-center text-lg-left">Report Dashboard</h2>
+                        <p class="text-center text-lg-left">
+                            Examine your comprehensive network posture to evaluate your vulnerabilities compared to attack techniques and understand what is working and what needs improvement.
+                        </p>
+                    </div>
+                    <div class="col-lg-8 order-lg-1 my-lg-3 mb-3">
+                        <img class="d-block w-100" src="./images/slides/UF_Monitor_report_dashboard.png"
+                             alt="Report Dashboard">
+                    </div>
+                </div>
+            </div>
+            <div id="menu3" class="tab-pane fade">
+                <div class="row">
+                    <div class="col-lg-4 order-lg-2 mt-lg-5">
+                        <h2 class="text-center text-lg-left">Report Detail</h2>
+                        <p class="text-center text-lg-left">
+                            Expand your findings with concrete actions and recommendations. Review details, analyze results from different angles, and determine future courses of action.
+                        </p>
+                    </div>
+                    <div class="col-lg-8 order-lg-1 my-lg-3 mb-3">
+                        <img class="d-block w-100" src="./images/slides/UF_Monitor_report_detail.png"
+                             alt="Report Detail">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5"><!--SECOND CAROUSEL-->
+        <div class="row">
+            <div class="col text-center">
+                <h1>Intrusion Set Dashboard</h1>
+            </div>
+        </div>
+        <div class="row mt-lg-3 justify-content-center">
+            <div class="col-lg-9">
+                <p class="text-light text-center">
+                    Explore the MITRE ATT&CK™ techniques associated with intrusions in the Intrusion Set
+                    Dashboard, and view similarities and differences. The Dashboard will also show you
+                    Critical Controls to mitigate these techniques. <a
+                        href="https://iadgov.github.io/unfetter/discover-guide.html">Learn more</a>
+                </p>
+            </div>
+        </div>
+        <div class="row text-center my-3">
+            <div class="col mx-auto">
+                <ul class="nav nav-pills center-pills">
+                    <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#home2">ATTACK PATTERNS</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#menu12">COMPARE PATTERNS</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#menu22">SECURITY CONTROLS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="tab-content">
+            <div id="home2" class="tab-pane fade show active">
+                <div class="row mb-5 pb-5">
+                    <div class="col-lg-4 mt-lg-5">
+                        <h2 class="text-center text-lg-left">Attack Patterns</h2>
+                        <p class="text-center text-lg-left">
+                            Explore the Intrusion Sets and learn the associated MITRE ATT&CK™ techniques.  Explore attack patterns and understand them in depth.
+                        </p>
+                    </div>
+                    <div class="col-lg-8 my-lg-3 mb-3">
+                        <img class="d-block w-100" src="./images/slides/UF_Monitor_attack_patterns.png"
+                             alt="Attack Patterns">
+                    </div>
+                </div>
+            </div>
+            <div id="menu12" class="tab-pane fade">
+                <div class="row mb-5 pb-5">
+                    <div class="col-lg-4 mt-lg-5">
+                        <h2 class="text-center text-lg-left">Compare Patterns</h2>
+                        <p class="text-center text-lg-left">
+                            Compare Intrusion Sets and discover associated common techniques. Identify which MITRE ATT&CK™ techniques to focus on in your environment.
+                        </p>
+                    </div>
+                    <div class="col-lg-8 my-lg-3 mb-3">
+                        <img class="d-block w-100" src="./images/slides/UF_Monitor_compare_patterns.png"
+                             alt="Compare Patterns">
+                    </div>
+                </div>
+            </div>
+            <div id="menu22" class="tab-pane fade">
+                <div class="row mb-5 pb-5">
+                    <div class="col-lg-4 mt-lg-5">
+                        <h2 class="text-center text-lg-left">Security Controls</h2>
+                        <p class="text-center text-lg-left">
+                            Determine which mitigations would stop the MITRE ATT&CK™ techniques that different Intrusion Sets use. This prioritized list is a valuable place to start with your network security.
+                        </p>
+                    </div>
+                    <div class="col-lg-8 my-lg-3 mb-3">
+                        <img class="d-block w-100" src="./images/slides/UF_Monitor_security_controls.png"
+                             alt="Security Controls">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center divider-image"><!--DIVIDER IMAGE-->
+        <div class="row align-items-end divider-row2">
+            <div class="col">
+                <img class="img-fluid" src="./images/pretties_3.png" alt="">
+            </div>
+            <div class="col">
+                <img class="img-fluid" src="./images/pretties_4.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mb-sm-5 mt-5 py-5">
+    <div class="row justify-content-center mt-sm-5 mt-3 pt-sm-5 pt-4">
+        <div class="col-lg-8 text-center">
+            <h1 class="text-aqua"><b>Unfetter Analytic:</b> Measure the
+                effectiveness of your analytics.</h1>
+        </div>
+    </div>
+    <div class="row mb-sm-4 pb-sm-4">
+        <div class="col text-center">
+            <p>
+                Unfetter Analytic is a prototype that allows developers to gain familiarity with the
+                ATT&CK™ framework to measure the effectiveness of their analytics. Write analytics and
+                map them to the MITRE ATT&CK™ techniques you want to detect. When the analytic
+                event is created, the Kibana display shows the context around the event.
+            </p>
+            <a href="https://iadgov.github.io/unfetter/analytics-overview.html" class="btn btn-primary btn-aqua">Learn
+                More</a>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid"><!--COLORED FOOTER-->
+    <div class="row">
+        <div class="col-lg-6 bg-blue text-light p-sm-5">
+            <div class="row justify-content-end">
+                <div class="col-lg-8 p-5 px-lg-3 align-self-center">
+                    <h2>The Future of Unfetter</h2>
+                    <p class="text-light">
+                        The Unfetter team is improving current capabilities and experimenting in new areas. Unfetter Insight will:
+                    </p>
+                    <ul class="text-light">
+                        <li>Read and associate threat reports with MITRE ATT&CK™ techniques
+                        </li>
+                        <li>Translate and convert analytics to work in
+                            Elasticsearch, Splunk, etc.
+                        </li>
+                        <li>Ingest and evaluate threat intelligence data using
+                            crowdsourced partner data
+                        </li>
+                        <li>Automatically ingest complex threat data from trusted
+                            sources and update mitigations
+                        </li>
+                        <li>Increase detail and granularity of threat reporting
+                            dashboards
+                        </li>
+                        <li>Increase Red and Blue Team effectiveness with the Purple Team Operations Planner</li>
+                    </ul>
+                    <a href="unfetter-future.html" class="btn btn-outline-secondary btn-white">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 bg-aqua text-light p-sm-5">
+            <div class="row justify-content-start">
+                <div class="col-lg-8 p-5 px-lg-3 align-self-center">
+                    <img class="img-fluid rounded mb-3 mx-auto d-block" src="./images/pretties_6.png" alt="">
+                    <h2>Meeting the needs of all users.</h2>
+                    <p class="text-light">
+                        Each workflow is focused on the unique needs
+                        and requirements of security professionals.
+                    </p>
+                    <ul class="text-light">
+                        <li>Threat Reporters track, document, and analyze threat
+                            reports
+                        </li>
+                        <li>Defenders track and assess gaps in their networks</li>
+                        <li>Analysts build, improve, and share new and existing
+                            behavior-based analytics
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-dkgrey py-5"><!--DARK CALLOUT-->
+    <div class="container">
+        <div class="row align-items-center py-sm-3">
+            <div class="col-lg-6 align-self-center text-primary img-bkgd py-5 p-lg-5">
+                <h1 class="py-sm-5">Join the Experiment.<br>
+                    Developers and
+                    expertise required.</h1>
+            </div>
+            <div class="col-lg-6">
+                <p class="text-light">
+                    Unfetter is open source and looking for partners. If you have
+                    an idea for new functionality or a new workflow, let us know
+                    and submit an issue in <a href="https://github.com/unfetter-discover/unfetter">GitHub</a>. If you are a developer and
+                    have ideas on how to contribute, we welcome a pull request. We’re excited for everyone to join the experiment.
+                </p>
+                <a name="" id="" class="btn btn-primary" href="https://github.com/unfetter-discover/unfetter"
+                   role="button">Download Unfetter</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-black py-4 py-sm-5"><!--FINAL FOOTER-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 footer">
+                <img src="images/un_logo.svg" width="150px" height="40px">
+                <p>
+                    Unfetter is an Information Assurance
+                        mission at the National Security
+                        Agency (nsa.gov)
+
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-6 footer">
+                <img src="images/oasis_logo.svg" width="150px" height="40px">
+                <p>
+                    OASIS is a nonprofit consortium that drives the development,
+                        convergence and adoption of open standards for the global
+                        information society. Cyber Threat Intelligence (CTI)
+                        subcommittee oversees the STIX&trade; and TAXII&trade;
+
+                </p>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-4 text-light">
+                        <p>
+                            Feedback
+                        </p>
+                    </div>
+                    <div class="col-4 text-light">
+                        <p>
+                            Privacy
+                        </p>
+                    </div>
+                    <div class="col-4 text-light">
+                        <p>
+                            Terms
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+<!-- Holder.js for placeholder images -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
+</body>
+</html>

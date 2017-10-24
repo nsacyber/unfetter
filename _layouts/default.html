@@ -1,90 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-	<title>{{site.title}}</title>
-	<!-- CSS  -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <title>Unfetter Project</title>
 
-	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
-	<link rel="icon" type="image/png" href="/images/favicon/favicon.png">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
-</head>
+    <!--Roboto Font-->
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,600,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,600,700,900" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="./unfetter.css">
 
-<body>
+    <style>
 
-    <ul id='dropdown1' class='dropdown-content'>
-		<li><a href="analytics-overview.html" width="800px" height="2100px">Analytic Overview </a></li>
-		<li><a href="https://github.com/unfetter-analytic/unfetter">GitHub</a></li>
-		<li><a href="analytic-architecture.html">Architecture</a></li>
-		<li><a href="analytic-setup.html">Setup</a></li>
-		<li><a href="analytic-events.html">Generate Events</a></li>
-</ul>
+    </style>
+  </head>
 
-	<ul id='dropdown2' class='dropdown-content'>
-		<li><a href="discover-overview.html" width="800px" height="2100px">Discover Overview </a></li>
-		<li><a href="discover-guide.html" width="800px" height="2100px">User Guide </a></li>
-		<li><a href="https://www.github.com/unfetter-discover/unfetter">Installation</a></li>
-		<li><a href="https://www.github.com/unfetter-discover/unfetter/wiki">Developer Instructions</a></li>
+  <body>
+    <nav class="navbar navbar-dark bg-blue fixed-top">
+      <a class="navbar-brand" href="./index.html"><img src="images/uf_icon.svg" alt="Unfetter" width="50px" height="50px"></a>
 
-      
-	</ul>
-	
-	<div class="navbar-fixed">
-		<nav class="application-header" role="navigation">
-			<div class="nav-wrapper container">
-				<a id="logo-container" href="http://www.unfetter.io" class="brand-logo"><img src="images/brand-logo.png"></a>
-				<ul class="right hide-on-med-and-down">
-					<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Unfetter Analytic<i class="material-icons right">arrow_drop_down</i></a></li>
-					<li><a class="dropdown-button" href="#!" data-activates="dropdown2">Unfetter Discover<i class="material-icons right">arrow_drop_down</i></a></li>
-					<li><a href="https://mitre.github.io/unfetter" target="_blank">Unfetter at MITRE</a></li>
-					<li><a href="stix.html">Using STIX 2.0</a></li>
-				</ul>
-	
-				<ul id="nav-mobile" class="side-nav">
-					<li class="active subheader"> <a href="analytics-overview.html">Unfetter Analytic</a></li>
-					<li><a href="analytics-overview.html" width="800px" height="2100px">Overview </a></li>
-					<li><a href="https://github.com/unfetter-analytic/unfetter">GitHub</a></li>
-					<li><a href="analytic-architecture.html">Architecture</a></li>
-					<li><a href="analytic-setup.html">Setup</a></li>
-					<li><a href="analytic-events.html">Generate Events</a></li>
-					<li><div class="divider"></div></li>
-					<li class="active subheader"><a target="_blank" href="discover-overview.htm">Unfetter Discover</a></li>
-					<li><a href="discover-overview.html" width="800px" height="2100px">Overview </a></li>
-					<li><a href="discover-guide.html" width="800px" height="2100px">User Guide </a></li>
-					<li><a href="https://www.github.com/unfetter-discover/unfetter">Installation</a></li>
-					<li><a href="https://www.github.com/unfetter-discover/unfetter/wiki">Developer Instructions</a></li>
-					<li><div class="divider"></div></li>								  
-					<li><a href="https://mitre.github.io/unfetter" target="_blank">Unfetter at MITRE</a></li>
-					<li><div class="divider"></div></li>
-					<li><a href="stix.html">Using STIX 2.0</a></li>
-				</ul>
-				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-			</div>
-		</nav>
-	</div>
+      <ul class="navbar-nav d-none d-sm-block ml-auto px-5">
+        <li class="nav-item active">
+          <a class="nav-link " href="./index.html">UNFETTER <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#unfetterNavbar">
+        <span> </span>
+        <span> </span>
+        <span> </span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="unfetterNavbar">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col text-center">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="analytics-overview.html">Analytic Overview</a>
+                </li>
+                <li>
+                  <div class="sub-nav">
+                    <a class="nav-link" href="https://github.com/unfetter-analytic/unfetter">GitHub</a>
+                    <a class="nav-link" href="analytic-architecture.html">Architecture</a>
+                    <a class="nav-link" href="analytic-setup.html">Setup</a>
+                    <a class="nav-link" href="analytic-events.html">Generate Events</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="discover-overview.html">Discover Overview </a>
+                </li>
+                <li>
+                  <div class="sub-nav">
+                    <a class="nav-link" href="discover-guide.html">User Guide </a>
+                    <a class="nav-link" href="https://www.github.com/unfetter-discover/unfetter">Installation</a>
+                    <a class="nav-link" href="https://www.github.com/unfetter-discover/unfetter/wiki">Developer Instructions</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"  href="https://mitre.github.io/unfetter">Unfetter at MITRE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="stix.html">Using STIX 2.0</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
 
 
     {{content}}
 
-	<footer class="application-header">
-		<div class="footer-copyright">
-			<div class="container">
-				Made by <a class="white text-lighten-3" target="_blank" href="http://www.iad.gov">NSA Information Assurance</a>
+  
+      <div class="container-fluid bg-black py-4 py-sm-5"><!--FINAL FOOTER-->
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-4 col-sm-6 footer">
+			  <img src="images/un_logo.svg" width="150px" height="40px">
+			  <p><small>Unfetter is an Information Assurance
+				mission at the National Security
+				Agency (nsa.gov)</small></p>
 			</div>
+			<div class="col-md-4 col-sm-6 footer">
+			  <img src="images/oasis_logo.svg" width="150px" height="40px">
+			  <p><small>OASIS is a nonprofit consortium that drives the development,
+				convergence and adoption of open standards for the global
+				information society. Cyber Threat Intelligence (CTI)
+				subcommittee oversees the STIX&trade; and TAXII&trade;</small></p>
+			</div>
+			<div class="col-md-4">
+			  <div class="row">
+				<div class="col-4 text-light">
+				  <p>
+					Feedback
+				  </p>
+				</div>
+				<div class="col-4 text-light">
+				  <p>
+					Privacy
+				  </p>
+				</div>
+				<div class="col-4 text-light">
+				  <p>
+					Terms
+				  </p>
+				</div>
+			  </div>
+			</div>
+		  </div>
 		</div>
-	</footer>
-
-	<!--  Scripts-->
-	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="js/materialize.js"></script>
-	<script src="js/init.js"></script>
-</body>
-
-</html>
+	  </div>
+	  <!-- Bootstrap core JavaScript
+	  ================================================== -->
+	  <!-- Placed at the end of the document so the pages load faster -->
+	  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  
+	  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	  <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+	  <!-- Holder.js for placeholder images -->
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
+	</body>
+  </html>
+  

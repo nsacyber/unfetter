@@ -1,5 +1,5 @@
 ---
-title: Unfetter Analytics
+title: Unfetter Analytic
 layout: second
 permalink: analytics-overview.html
 ---

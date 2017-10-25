@@ -5,19 +5,6 @@ permalink: analytic-events.html
 ---
 
 
-
-<div class="container py-5"><!--FIRST TEXT BLOCK-->
-    <div class="row justify-content-center">
-        <div class="col-9">
-
-            <div class="row py-3">
-                <div class="col text-center">
-                    <h2>The Unfetter team is improving current capabilities and experimenting with new areas in cybersecurity.</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row p-3">
-            <div class="col">
 <h4>CREATING EVENTS</h4>
 <p>Unfetter Analytic uses a Windows VM to generate interesting events such as process creation, user logins, and network connections.The events are shipped to the Unfetter Analytic server, Logstash is used to ingest them into Elasticsearch, and then Apache Spark is used to run an analytic that generates new events (generally either alerts or items for situational awareness).
 </p><p>
@@ -29,14 +16,6 @@ To see the events in Elasticsearch you can use either Kibana or the lighter weig
 </p><p>
 The results of the analytics are also visible in Unfetter-Discover at <strong>https://localhost/cti-stix-ui/sightings</strong>. <strong>https://localhost/elasticsearch/_plugin/head</strong> Events from the Windows Event Log, as well as Sysmon events, should begin to populate Elasticsearch and be viewable via Kibana or Elasticsearch-head. 
 </p>
-</div>
-</div>
-</div>
-</div>
-<div class="container-fluid bg-dkgrey py-sm-5 py-3"><!--DARK BACKGROUND SECTION-->
-    <div class="container">
-    <div class="row">
-        <div class="col text-center">
 <h4>Running the Analytics</h4>
 <p>
 Create new analytics by putting them in the <strong>unfetter-analytic/unfetter-analytic/analytic-system/src</strong> directory.  A quick ls shows a number of Python files with names similar to CAR_2016_04_002.py. Each of these files is a separate analytic that you can read about in CAR. You can also look at the file itself using a text editor like emacs, vim, or nano.  Create a new analytic.  Then, edit the run.sh file to run the new analytic in the loop.  Stop the docker containers, and rerun them <strong>docker-compose up</strong>.
@@ -56,10 +35,5 @@ The alert should now appear in Kibana. Adjusting the time interval in the upper 
 
 </p>
 
-
-</div>
-</div>
-</div>
-</div>
 
 

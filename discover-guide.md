@@ -4,19 +4,6 @@ layout: second
 permalink: discover-guide.html
 ---
 
-<div class="container py-5"><!--FIRST TEXT BLOCK-->
-<div class="row justify-content-center">
-<div class="col-9">
-
-<div class="row py-3">
-<div class="col text-center">
-<h2>The Unfetter team is improving current capabilities and experimenting with new areas in cybersecurity.</h2>
-</div>
-</div>
-</div>
-<div class="row p-3">
-<div class="col">
-
 Welcome to the Unfetter Discover web application user guide. This guide is divided into three sections.  Assessment Dashboard shows how security professionals can assess their current network environments, and visualize their gaps and high-risk areas.  Intrusion Set Dashboard describes how Threat Reports can look at similarities and differences between Intrusion Sets and Threat Actors, and determine proper mitigations.  Settings shows how to enter data into Unfetter.
 
 <h4>Overview</h4>
@@ -68,7 +55,3 @@ The pie graphs on the left-hand side provide a graphical representation of the R
 </p><p>
 Let's click the "collection" link in the leftmost column, which will expand the Collection Kill Chain into all the specific MITRE ATT&CK Patterns.
 </p>
-</div>
-</div>
-</div>
-</div>

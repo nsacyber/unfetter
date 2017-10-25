@@ -3,18 +3,7 @@ title: Unfetter Analytic Setup
 layout: second
 permalink: analytic-setup.html
 ---
-<div class="container py-5"><!--FIRST TEXT BLOCK-->
-    <div class="row justify-content-center">
-        <div class="col-9">
 
-            <div class="row py-3">
-                <div class="col text-center">
-                    <h2>The Unfetter team is improving current capabilities and experimenting with new areas in cybersecurity.</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row p-3">
-            <div class="col">
 <h4>SETUP</h4>
 <p>Setup PageThe Unfetter Analytic server side system is built using Docker to easily spin up containers for running each of the desired applications.  
 </p><p>
@@ -28,20 +17,13 @@ Under the main directory, there are two sub-directories: unfetter-analytic and u
 </p><p>
 When first starting each VM with <code>vagrant up</code>, Vagrant provisioning will go out and install all the software needed for each VM. No software, other than source code, is provided in the GitHub project.
 </p><p>
-# To install the prerequisites
-- Install <a href="https://www.docker.com/products/overview" target="_blank">Docker</a>
-- Install <a href="https://www.vagrantup.com/docs/installation" target="_blank">Vagrant</a>
-- Install <a href="https://www.virtualbox.comwiki/Downloads" target="_blank">Oracle's VirtualBox</a>
-- Install a git client and run <strong>clone github.com/unfetter-analytic/unfetter.git</strong>
+<h4>To install the prerequisites</h4>
+<li>Install <a href="https://www.docker.com/products/overview" target="_blank">Docker</a></li>
+<li>Install <a href="https://www.vagrantup.com/docs/installation" target="_blank">Vagrant</a></li>
+<li>Install <a href="https://www.virtualbox.comwiki/Downloads" target="_blank">Oracle's VirtualBox</a></li>
+<li>Install a git client and run <strong>clone github.com/unfetter-analytic/unfetter.git</strong></li>
 </p>
-</div>
-</div>
-</div>
-</div>
-<div class="container-fluid bg-dkgrey py-sm-5 py-3"><!--DARK BACKGROUND SECTION-->
-    <div class="container">
-    <div class="row">
-        <div class="col text-left">
+
 <h4>Starting The Server</h4>
 <p>
 The Unfetter Analytic Linux VM contains the ELK stack, Apache Spark, and the Python (PySpark) files that run the analytics.
@@ -51,7 +33,7 @@ The Windows VM is a Windows 7 32-bit with Microsoft Sysmon and Nxlog installed. 
 There are a number of GitHub projects needed to run the Unfetter Analytic system.  They are all found under <a href="https://www.github.com/unfetter-analytic" target="_blank">www.github.com/unfetter-analytic</a>  
 </p><p>
 You can easily clone all those projects	in a couple of easy steps:
-<pre><code style="color:white;">mkdir unfetter-analytic;cd unfetter-analytic
+<pre><code>mkdir unfetter-analytic;cd unfetter-analytic
 curl -s https://api.github.com/orgs/unfetter-analytic/repos\?per_page\=200 | perl -ne 'print "$1\n" if (/"clone_url": "([^"]+)/)' | xargs -n 1 git clone
 cd ./unfetter
 docker-compose up</code></pre>
@@ -62,22 +44,15 @@ Wait until Docker has started. There won't be any data until the Windows system 
 </p><p>
 The running docker container "analytic-system" has the analytics.  If you want to run analytics individually, attach to this container to run them.
 </p>
-</div>
-</div>
-</div>
-</div>
-<div class="container py-5"><!--FIRST TEXT BLOCK-->
-    <div class="row justify-content-center">
-        <div class="col-9">
 <h4>Starting Windows</h4>
 <p>
 Setting up the Windows system the first time has a few more steps than setting up the analytic server. You will need a version of Windows 7 that can be created as a box file. There are a few ways to do this, but these instructions will show you how to use <a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/" target="_blank">modern.ie</a> to download an evaluation copy of Windows 7 from Microsoft.
 </p><p>
-- Go to the <a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/" target="_blank">modern.ie</a> site and download an IE11 on Win7 Virtual Machine for the Vagrant platform.
-- Unzip IE11.Win7.Vagrant.zip and load the box file (IE11 - Win7.box) to your host computer. The box file is a VM packaged with metadata that Vagrant uses as a starting point for your VM.
-- Go to the directory where you unzipped the .box file and run the command: <strong>vagrant box add win7 'IE11 - Win7.box'</strong>
-- Your Vagrant system should now have a base Windows 7 image called <i>Win7</i>
-- Go to the "unfetter-windows" directory and run: <strong>vagrant up</strong>
+<li>Go to the <a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/" target="_blank">modern.ie</a> site and download an IE11 on Win7 Virtual Machine for the Vagrant platform.</li>
+<li>Unzip IE11.Win7.Vagrant.zip and load the box file (IE11 - Win7.box) to your host computer. The box file is a VM packaged with metadata that Vagrant uses as a starting point for your VM.</li>
+<li>Go to the directory where you unzipped the .box file and run the command: <strong>vagrant box add win7 'IE11 - Win7.box'</strong></li>
+<li>Your Vagrant system should now have a base Windows 7 image called <i>Win7</i></li>
+<li>Go to the "unfetter-windows" directory and run: <strong>vagrant up</strong></li>
 </p><p>
 Vagrant won't be able to complete the provisioning on its own. Manual configuration of Vagrant is necessary so that Vagrant can communicate with the guest Windows OS. When the Windows GUI starts, do the following on the VirtualBox window
 </p><p>
@@ -103,7 +78,7 @@ Navigate back to the window where "vagrant up" was executed. Provisioning should
 The VM can be accessed through the GUI. If you used Modern.ie, then the credentials are "IEUser/Passw0rd!"
 </p><p>
 It is HIGHLY recommended that if you work with Microsoft Windows, you purchase a licensed copy and build your own Vagrant box file. If you want to make your own base Windows box, this <a href="http://www.hurryupandwait.io/blog/creating-windows-base-images-for-virtualbox-and-hyper-v-using-packer-boxstarter-and-vagrant" target="_blank">webpage</a> has an example.
-# Web Interfaces
+<h4>Web Interfaces</h4>
 Unfetter Analytic provides three interfaces to see your collected data. Kibana provides a full-featured interface to perform complex searches. You can access it at: <strong>https://localhost</strong>
 </p><p>
 The Elasticsearch head plugin provides a simple interface that allows you to browse through the collected data. It is accessible at: <strong>https://localhost/elasticsearch/_plugin/head</strong>
@@ -111,8 +86,4 @@ The Elasticsearch head plugin provides a simple interface that allows you to bro
 The Unfetter-Discover system is avilable at <strong>https://localhost/unfetter-discover</strong>
 Next, learn to <a href="analytic-events.html">Generate Events</a>
 </p>
-</div>
-</div>
-</div>
-
 

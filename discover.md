@@ -5,18 +5,6 @@ permalink: discover-overview.html
 ---
 
 
-<div class="container py-5"><!--FIRST TEXT BLOCK-->
-<div class="row justify-content-center">
-<div class="col-9">
-
-<div class="row py-3">
-<div class="col text-center">
-<h2>The Unfetter team is improving current capabilities and experimenting with new areas in cybersecurity.</h2>
-</div>
-</div>
-</div>
-<div class="row p-3">
-<div class="col">
 <p>The Unfetter Discover application utilizes the <a href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti-stix" target="_blank">OASIS</a> Open Standard called STIX, more specifically the <a href="https://github.com/STIXProject/specifications/wiki/Work-Product:-STIX-2.0-Specification" target="_blank">STIX 2.0</a> specification because of it's use of JSON for data representation.
 </p><p>
 Unfetter Discover is a locally installed web application that is focused on helping the user explore additional gaps across their security posture and experiment with the next steps. Unfetter Discover focuses on mapping mitigations and security controls to Mitre's <a href="https://attack.mitre.org" target="_blank">ATT&amp;CK&#8482;</a> and demonstrating how to explore, learn, and communicate between tactical, operation, and strategic levels of operation. By building relationships off a common framework, like ATT&CK, groups can create complex Cyber Threat Intelligence (CTI) data and share it in meaningful ways. Unfetter Discover provides a set of dashboards, each helping visualize the relationships between the CTI data.
@@ -24,14 +12,7 @@ Unfetter Discover is a locally installed web application that is focused on help
 </p><p> 
 For more advanced users (developers), they can clone all the projects out of github and then re-build each of the docker containers from the source.  These instructions can be found under the Unfetter Discover dropdown as well.
 </p>
-</div>
-</div>
-</div>
-</div>
-<div class="container-fluid bg-dkgrey py-sm-5 py-3"><!--DARK BACKGROUND SECTION-->
-    <div class="container">
-    <div class="row">
-        <div class="col text-center">
+
 <h4>Getting Involved</h4>
 
 <p>
@@ -54,7 +35,4 @@ For more advanced users (developers), they can clone all the projects out of git
     and demonstrating how to explore, learn, and communicate between tactical, operational, and strategic levels of operation.
 </p>
 
-</div>
-</div>
-</div>
-</div>
+

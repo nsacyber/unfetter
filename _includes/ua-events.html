@@ -1,11 +1,4 @@
----
-title: Generating Unfetter Analytic Events
-layout: second
-permalink: analytic-events.html
----
-
-
-<h4>CREATING EVENTS</h4>
+<h2>CREATING EVENTS</h2>
 <p>Unfetter Analytic uses a Windows VM to generate interesting events such as process creation, user logins, and network connections.The events are shipped to the Unfetter Analytic server, Logstash is used to ingest them into Elasticsearch, and then Apache Spark is used to run an analytic that generates new events (generally either alerts or items for situational awareness).
 </p><p>
 Below is an example process to generate an event that will trigger an alert in the Windows VM.
@@ -32,7 +25,6 @@ This command will use spark-submit to run the "run_unfetter_analytic.py" program
 After printing the Unfetter banner, run_unfetter_analytic will display the CAR name, number, and description. This will generate a number of alerts once it completes.
 </p><p>
 The alert should now appear in Kibana. Adjusting the time interval in the upper right-hand corner may be necessary.
-
 </p>
 
 

@@ -1,18 +1,11 @@
 ---
 title: Unfetter Analytic
 layout: second
+tagline: Measure the effectiveness of your analytics.
 permalink: analytics-overview.html
 ---
 
 <div class="container mb-5"><!--SECOND CAROUSEL-->
-    <div class="row mt-lg-3 justify-content-center">
-        <div class="col-lg-9">
-            <p>Unfetter Analytic s a reference implementation, inspired by The MITRE Corporation
-            <a href="https://car.mitre.org" target="_blank">CAR</a> and <a href="https://attack.mitre.org" target="_blank">ATT&amp;CK&trade;</a> framework, and supported by The <a href="https://www.mitre.org" target="_blank">MITRE Corporation</a>
-            and the <a href="https://www.nsa.gov" target="_blank">National Security Agency</a> (NSA).
-            </p>
-        </div>
-    </div>
     <div class="row text-center my-3">
         <div class="col mx-auto">
             <ul class="nav nav-pills center-pills">

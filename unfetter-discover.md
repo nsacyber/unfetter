@@ -1,16 +1,11 @@
 ---
 title: Unfetter Discover
 layout: second
+tagline: Analyze security gaps and explore adversary tradecraft
 permalink: discover-overview.html
 ---
 
 <div class="container mb-5"><!--SECOND CAROUSEL-->
-    <div class="row mt-lg-3 justify-content-center">
-        <div class="col-lg-9">
-            <p>Unfetter Discover uses the The MITRE Corporation <a href="https://attack.mitre.org" target="_blank">ATT&amp;CK&trade;</a> framework to allow users to discover gaps in network security.
-            </p>
-        </div>
-    </div>
     <div class="row text-center my-3">
         <div class="col mx-auto">
             <ul class="nav nav-pills center-pills">

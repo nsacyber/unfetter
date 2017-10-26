@@ -48,3 +48,7 @@ permalink: discover-overview.html
         </div>        
     </div>
 </div>
+    </div>
+  </div>
+  </div>
+  </div>

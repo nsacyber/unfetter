@@ -3,6 +3,7 @@
 body {
     padding-top: 5rem;
     font-family: "Roboto", sans-serif;
+    min-height: 100vh;
 }
 p, ul {
     color: #6A6A6A;

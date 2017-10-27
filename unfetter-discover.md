@@ -9,7 +9,7 @@ permalink: discover-overview.html
     <div class="row text-center my-3">
         <div class="col mx-auto">
             <ul class="nav nav-pills center-pills">
-                <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#overview">OVERVIEW</a></li>
+                <li class="nav-item"><a class="nav-link active" data-toggle="pill" ref="#overview">OVERVIEW</a></li>
                 <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#setup">SETUP</a></li>
                 <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#events">USER GUIDE</a></li>
                 <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#getstarted">GET INVOLVED</a>

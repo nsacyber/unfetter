@@ -70,14 +70,14 @@ This script is located in unfetter-windows/resources/winrm.cmd on the host OS. A
 Navigate back to the window where "vagrant up" was executed. Provisioning should continue now that Vagrant can communicate with the guest OS. Vagrant will install and configure Sysmon and Nxlog. When it is all done, check the following log file for errors to make sure the Windows machine can see the analytic server: <strong>c:\Program Files\nxlog\data\nxlog.log</strong>
 </p><p>
 The VM can be accessed through the GUI. If you used Modern.ie, then the credentials are "IEUser/Passw0rd!"
-</p><p>
-It is HIGHLY recommended that if you work with Microsoft Windows, you purchase a licensed copy and build your own Vagrant box file. If you want to make your own base Windows box, this <a href="http://www.hurryupandwait.io/blog/creating-windows-base-images-for-virtualbox-and-hyper-v-using-packer-boxstarter-and-vagrant" target="_blank">webpage</a> has an example.
-<h4>Web Interfaces</h4>
-Unfetter Analytic provides three interfaces to see your collected data. Kibana provides a full-featured interface to perform complex searches. You can access it at: <strong>https://localhost</strong>
-</p><p>
-The Elasticsearch head plugin provides a simple interface that allows you to browse through the collected data. It is accessible at: <strong>https://localhost/elasticsearch/_plugin/head</strong>
-</p><p>
-The Unfetter-Discover system is avilable at <strong>https://localhost/unfetter-discover</strong>
-Next, learn to <a href="analytic-events.html">Generate Events</a>
 </p>
+<p>It is HIGHLY recommended that if you work with Microsoft Windows, you purchase a licensed copy and build your own Vagrant box file. If you want to make your own base Windows box, this <a href="http://www.hurryupandwait.io/blog/creating-windows-base-images-for-virtualbox-and-hyper-v-using-packer-boxstarter-and-vagrant" target="_blank">webpage</a> has an example.</p>
+
+<h4>Web Interfaces</h4>
+<p>Unfetter Analytic provides three interfaces to see your collected data. Kibana provides a full-featured interface to perform complex searches. You can access it at: <strong>https://localhost</strong></p>
+
+<p>The Elasticsearch head plugin provides a simple interface that allows you to browse through the collected data. It is accessible at: <strong>https://localhost/elasticsearch/_plugin/head</strong></p>
+
+<p>The Unfetter-Discover system is avilable at <strong>https://localhost/unfetter-discover</strong>
+Next, learn to <a href="analytic-events.html">Generate Events</a></p>
 

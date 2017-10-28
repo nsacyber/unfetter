@@ -212,3 +212,9 @@ p.lead {
     transform: rotate(-135deg);
     opacity: 0.9;
 }
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+  }

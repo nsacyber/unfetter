@@ -3,6 +3,7 @@
 body {
     padding-top: 5rem;
     font-family: "Roboto", sans-serif;
+    min-height: 100vh;
 }
 p, ul {
     color: #6A6A6A;
@@ -40,7 +41,9 @@ button, a.btn, .nav-pills .nav-link {
     border-radius: 40px !important;
     padding: .75rem 1.5rem;
 }
-
+.flex-grow {
+    flex: 1;
+}
 .nav-pills .nav-link {
     color: #9ac0ff;
     border: 2px solid;
@@ -102,7 +105,6 @@ p.lead {
 .text-aqua {
     color: #18baba;
 }
-
 
 .header-img {
     background: url("images/unfetter_header3_sm_bkgd.png") center / auto 100% no-repeat;

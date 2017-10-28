@@ -18,26 +18,13 @@
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="./unfetter.css">
   </head>
-  <body>
+  <body class="d-flex flex-column">
     {% include navbar.html %}
     <title>Unfetter Project</title>
+    <main role="main" class="flex-grow">
     {{content}}
-      <div class="container-fluid bg-black py-4 py-sm-5"><!--FINAL FOOTER-->
-		<div class="container">
-		  <div class="row">
-			<div class="col-md-4 col-sm-6 footer">
-			  <img src="images/un_logo.svg" width="150px" height="40px">
-			  <p><small>Unfetter is an Information Assurance
-				mission at the National Security
-				Agency (nsa.gov)</small></p>
-			</div>
-			<div class="col-md-4 col-sm-6 footer">
-			  <img src="images/oasis_logo.svg" width="150px" height="40px">
-			  <p><small>OASIS is a nonprofit consortium that drives the development,
-				convergence and adoption of open standards for the global
-				information society. Cyber Threat Intelligence (CTI)
-				subcommittee oversees the STIX&trade; and TAXII&trade;</small></p>
-			</div>
+    </main>
+
       {% include footer.html %}
 	</body>
   </html>

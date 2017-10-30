@@ -271,7 +271,7 @@ permalink: index.html
                 <div class="col-lg-8 p-5 px-lg-3 align-self-center">
                     <h2>The Future of Unfetter</h2>
                     <p class="text-light">
-                        The Unfetter team is improving current capabilities and experimenting in new areas. Unfetter Insight will:
+                        The Unfetter team is improving current capabilities and experimenting in new areas.
                     </p>
                     <ul class="text-light">
                         <li>Read and associate threat reports with MITRE ATT&CK™ techniques

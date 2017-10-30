@@ -41,7 +41,9 @@ button, a.btn, .nav-pills .nav-link {
     border-radius: 40px !important;
     padding: .75rem 1.5rem;
 }
-
+.flex-grow {
+    flex: 1;
+}
 .nav-pills .nav-link {
     color: #9ac0ff;
     border: 2px solid;
@@ -212,3 +214,9 @@ p.lead {
     transform: rotate(-135deg);
     opacity: 0.9;
 }
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+  }

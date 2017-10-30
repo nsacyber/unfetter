@@ -92,7 +92,6 @@ permalink: index.html
                     more</a></p>
             </div>
         </div>
-
         <div class="row text-center my-3">
             <div class="col mx-auto">
                 <ul class="nav nav-pills center-pills">
@@ -103,7 +102,6 @@ permalink: index.html
                 </ul>
             </div>
         </div>
-
         <div class="tab-content">
             <div id="home" class="tab-pane fade show active">
                 <div class="row">
@@ -162,7 +160,6 @@ permalink: index.html
             </div>
         </div>
     </div>
-
     <div class="container mb-5"><!--SECOND CAROUSEL-->
         <div class="row">
             <div class="col text-center">
@@ -190,8 +187,6 @@ permalink: index.html
                 </ul>
             </div>
         </div>
-
-
         <div class="tab-content">
             <div id="home2" class="tab-pane fade show active">
                 <div class="row mb-5 pb-5">
@@ -237,8 +232,7 @@ permalink: index.html
             </div>
         </div>
     </div>
-
-    <div class="container-fluid text-center divider-image"><!--DIVIDER IMAGE-->
+   <div class="container-fluid text-center divider-image"><!--DIVIDER IMAGE-->
         <div class="row align-items-end divider-row2">
             <div class="col">
                 <img class="img-fluid" src="./images/pretties_3.png" alt="">
@@ -249,7 +243,6 @@ permalink: index.html
         </div>
     </div>
 </div>
-
 <div class="container mb-sm-5 mt-5 py-5">
     <div class="row justify-content-center mt-sm-5 mt-3 pt-sm-5 pt-4">
         <div class="col-lg-8 text-center">

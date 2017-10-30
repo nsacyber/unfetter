@@ -11,7 +11,7 @@ permalink: discover-overview.html
             <ul class="nav nav-pills center-pills">
                 <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#overview">OVERVIEW</a></li>
                 <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#setup">SETUP</a></li>
-                <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#events">USER GUIDE</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#userguid">USER GUIDE</a></li>
                 <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#getstarted">GET INVOLVED</a>
                 </li>
             </ul>
@@ -32,7 +32,7 @@ permalink: discover-overview.html
                 </div>
             </div>
         </div>
-        <div id="events" class="tab-pane fade">
+        <div id="userguid" class="tab-pane fade">
             <div class="row mb-5 pb-5">
                 <div class="col-lg-12 mt-lg-12">
                 {% include ud-guide.html%}
@@ -48,7 +48,3 @@ permalink: discover-overview.html
         </div>        
     </div>
 </div>
-    </div>
-  </div>
-  </div>
-  </div>

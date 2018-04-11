@@ -72,21 +72,21 @@ permalink: index.html
 </div>
 
 <div class="container-fluid bg-black my-sm-5 pb-sm-5 pb-3">
-    <div class="container py-5"><!--FIRST CAROUSEL-->
+    <div class="container py-5"><!--Capability Assessment-->
         <div class="row justify-content-center py-sm-5 py-3">
             <div class="col-lg-8 text-center">
-                <h1><b>Unfetter Discover:</b> Analyze security
-                    gaps and explore adversary tradecraft</h1>
+                <h1><b>Unfetter Discover:</b> A unique platform that unifies the Network Defender and Threat Analysts, letting them create, share, and use threat intel</h1>
             </div>
         </div>
         <div class="row">
             <div class="col text-center">
-                <h1>Assessments</h1>
+                <h1>Capability Assessments</h1>
             </div>
         </div>
         <div class="row mt-lg-3 justify-content-center">
             <div class="col-lg-9">
                 <p class="text-light text-center">
+                    Allow
                     Assess the mitigations, analytics and sensors in your environment and see which MITRE
                     ATT&CK™ Techniques are a threat. <a href="discover-overview.html">Learn
                     more</a></p>
@@ -112,7 +112,7 @@ permalink: index.html
                         </p>
                     </div>
                     <div class="col-lg-8 order-lg-1 my-lg-3 mb-3">
-                        <img class="d-block w-100" src="./images/slides/UF_Monitor_survey.png" alt="Survey">
+                        <img class="d-block w-100" src="./images/slides/UF_Monitor_report_survey.png" alt="Survey">
                     </div>
                 </div>
             </div>
@@ -160,7 +160,71 @@ permalink: index.html
             </div>
         </div>
     </div>
-    <div class="container mb-5"><!--SECOND CAROUSEL-->
+    <div class="container mb-5"><!--Analytic Exchange-->
+        <div class="row">
+            <div class="col text-center">
+                <h1>Analytic Exchange</h1>
+            </div>
+        </div>
+        <div class="row mt-lg-3 justify-content-center">
+            <div class="col-lg-9">
+                <p class="text-light text-center">
+                    Threat Analytsts can create, share complex behaviors and engage with each other in a true community</p>
+            </div>
+        </div>
+        <div class="row text-center my-3">
+            <div class="col mx-auto">
+                <ul class="nav nav-pills center-pills">
+                    <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#home3">SHARE</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#menu13">PRIORITIZE</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#menu23">TRANSLATE</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content">
+            <div id="home3" class="tab-pane fade show active">
+                <div class="row  mb-5 pb-5">
+                    <div class="col-lg-4 mt-lg-5">
+                        <h2 class="text-center text-lg-left">Share</h2>
+                        <p class="text-center text-lg-left">
+                            Threat Analysts can create new analytics that are mapped to the MITRE ATT&CK™ framework.  Analytics can be searched, filtered, ranked and commented.
+                        </p>
+                    </div>
+                    <div class="col-lg-8 my-lg-3 mb-3">
+                        <img class="d-block w-100" src="./images/slides/UF_Monitor_analytic_hub.png" alt="Survey">
+                    </div>
+                </div>
+            </div>
+            <div id="menu13" class="tab-pane fade">
+                <div class="row  mb-5 pb-5">
+                    <div class="col-lg-4 mt-lg-5">
+                        <h2 class="text-center text-lg-left">Priortize</h2>
+                        <p class="text-center text-lg-left">
+                            Evaluate your analytic coverage of the the MITRE ATT&CK™ framework in one easy spot.  
+                        </p>
+                    </div>
+                    <div class="col-lg-8 my-lg-3 mb-3">
+                        <img class="d-block w-100" src="./images/slides/UF_Monitor_analytic_hub_detail.png"
+                                alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="menu23" class="tab-pane fade">
+                <div class="row  mb-5 pb-5">
+                    <div class="col-lg-4 mt-lg-5">
+                        <h2 class="text-center text-lg-left">Translate</h2>
+                        <p class="text-center text-lg-left">
+                            Not only describe your analytic, but track the scripts in different languages and implementations.  As a beta functionality, Unfetter will translate from the STIX Patterning language to Splunk and Elasticsearch queries automatically.  
+                        </p>
+                    </div>
+                    <div class="col-lg-8 my-lg-3 mb-3">
+                        <img class="d-block w-100" src="./images/slides/UF_Monitor_analytic_hub_create.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5"><!--Intrusion Set Dashboard-->
         <div class="row">
             <div class="col text-center">
                 <h1>Intrusion Set Dashboard</h1>
@@ -189,8 +253,8 @@ permalink: index.html
         </div>
         <div class="tab-content">
             <div id="home2" class="tab-pane fade show active">
-                <div class="row mb-5 pb-5">
-                    <div class="col-lg-4 mt-lg-5">
+                <div class="row">
+                    <div class="col-lg-4 order-lg-2 mt-lg-5">
                         <h2 class="text-center text-lg-left">Attack Patterns</h2>
                         <p class="text-center text-lg-left">
                             Explore the Intrusion Sets and learn the associated MITRE ATT&CK™ techniques.  Explore attack patterns and understand them in depth.
@@ -203,28 +267,28 @@ permalink: index.html
                 </div>
             </div>
             <div id="menu12" class="tab-pane fade">
-                <div class="row mb-5 pb-5">
-                    <div class="col-lg-4 mt-lg-5">
+                <div class="row">
+                    <div class="col-lg-4 order-lg-2 mt-lg-5">
                         <h2 class="text-center text-lg-left">Compare Patterns</h2>
                         <p class="text-center text-lg-left">
                             Compare Intrusion Sets and discover associated common techniques. Identify which MITRE ATT&CK™ techniques to focus on in your environment.
                         </p>
                     </div>
-                    <div class="col-lg-8 my-lg-3 mb-3">
+                    <div class="col-lg-8 order-lg-1 my-lg-3 mb-3">
                         <img class="d-block w-100" src="./images/slides/UF_Monitor_compare_patterns.png"
                              alt="Compare Patterns">
                     </div>
                 </div>
             </div>
             <div id="menu22" class="tab-pane fade">
-                <div class="row mb-5 pb-5">
-                    <div class="col-lg-4 mt-lg-5">
+                <div class="row">
+                    <div class="col-lg-4 order-lg-2 mt-lg-5">
                         <h2 class="text-center text-lg-left">Security Controls</h2>
                         <p class="text-center text-lg-left">
                             Determine which mitigations would stop the MITRE ATT&CK™ techniques that different Intrusion Sets use. This prioritized list is a valuable place to start with your network security.
                         </p>
                     </div>
-                    <div class="col-lg-8 my-lg-3 mb-3">
+                    <div class="col-lg-8 order-lg-1 my-lg-3 mb-3">
                         <img class="d-block w-100" src="./images/slides/UF_Monitor_security_controls.png"
                              alt="Security Controls">
                     </div>
@@ -232,6 +296,7 @@ permalink: index.html
             </div>
         </div>
     </div>
+
    <div class="container-fluid text-center divider-image"><!--DIVIDER IMAGE-->
         <div class="row align-items-end divider-row2">
             <div class="col">

@@ -28,11 +28,11 @@ permalink: index.html
         <div class="col-lg-9">
             <p>
                 When the threat hits, cybersecurity professionals working at the tactical,
-                operational, and strategic levels need to work together quickly and effectively to
+                operational, and strategic levels need to work together quickly and effectively 
                 enable a common cybersecurity strategy that protects against the adversary. To do
                 this in a repeatable, scalable way depends on an organization’s ability to discover
                 and mitigate gaps in their posture, understand adversary tradecraft, and implement and communicate
-                defensive courses of action.
+                defensive courese of action.
             </p>
         </div>
     </div>
@@ -86,8 +86,7 @@ permalink: index.html
         <div class="row mt-lg-3 justify-content-center">
             <div class="col-lg-9">
                 <p class="text-light text-center">
-                    Allow
-                    Assess the mitigations, analytics and sensors in your environment and see which MITRE
+                    Network Defenders can assess the mitigations, analytics and sensors in your environment and see which MITRE
                     ATT&CK™ Techniques are a threat. <a href="discover-overview.html">Learn
                     more</a></p>
             </div>
@@ -108,7 +107,7 @@ permalink: index.html
                     <div class="col-lg-4 order-lg-2 mt-lg-5">
                         <h2 class="text-center text-lg-left">Survey</h2>
                         <p class="text-center text-lg-left">
-                            Evaluate your infrastructure’s mitigations, analytics, and sensors through a simple survey. Visualize your gaps through the lens of MITRE’s ATT&CK™ framework.
+                            Evaluate your infrastructure’s mitigations, analytics, and capabilities through a simple survey. Visualize your gaps through the lens of MITRE’s ATT&CK™ framework.  As Network Defenders improve the security of the infrastructure, you can update the Assessment, maintaining an update to your situational awareness.
                         </p>
                     </div>
                     <div class="col-lg-8 order-lg-1 my-lg-3 mb-3">
@@ -135,7 +134,7 @@ permalink: index.html
                     <div class="col-lg-4 order-lg-2 mt-lg-5">
                         <h2 class="text-center text-lg-left">Report Dashboard</h2>
                         <p class="text-center text-lg-left">
-                            Examine your comprehensive network posture to evaluate your vulnerabilities compared to attack techniques and understand what is working and what needs improvement.
+                            Examine your comprehensive network posture to evaluate your vulnerabilities compared to overall attacker tactics and understand what is working and what needs improvement.
                         </p>
                     </div>
                     <div class="col-lg-8 order-lg-1 my-lg-3 mb-3">
@@ -187,7 +186,7 @@ permalink: index.html
                     <div class="col-lg-4 mt-lg-5">
                         <h2 class="text-center text-lg-left">Share</h2>
                         <p class="text-center text-lg-left">
-                            Threat Analysts can create new analytics that are mapped to the MITRE ATT&CK™ framework.  Analytics can be searched, filtered, ranked and commented.
+                            Threat Analysts can create new analytics and mpa them to the MITRE ATT&CK™ framework.  Analytics can be searched, filtered, ranked and commented on.
                         </p>
                     </div>
                     <div class="col-lg-8 my-lg-3 mb-3">
@@ -200,7 +199,7 @@ permalink: index.html
                     <div class="col-lg-4 mt-lg-5">
                         <h2 class="text-center text-lg-left">Priortize</h2>
                         <p class="text-center text-lg-left">
-                            Evaluate your analytic coverage of the the MITRE ATT&CK™ framework in one easy spot.  
+                            Evaluate your analytic coverage of the the MITRE ATT&CK™ framework in one easy spot.  Easily see the whole picture, and then dive down into the analytics that focus on particular attacker tactics.
                         </p>
                     </div>
                     <div class="col-lg-8 my-lg-3 mb-3">
@@ -214,7 +213,7 @@ permalink: index.html
                     <div class="col-lg-4 mt-lg-5">
                         <h2 class="text-center text-lg-left">Translate</h2>
                         <p class="text-center text-lg-left">
-                            Not only describe your analytic, but track the scripts in different languages and implementations.  As a beta functionality, Unfetter will translate from the STIX Patterning language to Splunk and Elasticsearch queries automatically.  
+                            Not only describe your analytic, but track different implementations in different SIEMs.  As a beta functionality, Unfetter will translate from the STIX Patterning language to Splunk and Elasticsearch queries automatically.  
                         </p>
                     </div>
                     <div class="col-lg-8 my-lg-3 mb-3">
@@ -235,19 +234,16 @@ permalink: index.html
                 <p class="text-light text-center">
                     Explore the MITRE ATT&CK™ techniques associated with intrusions in the Intrusion Set
                     Dashboard, and view similarities and differences. The Dashboard will also show you
-                    Critical Controls to mitigate these techniques. <a
-                        href="discover-overview.html">Learn more</a>
+                    Critical Controls to mitigate these techniques. 
                 </p>
             </div>
         </div>
         <div class="row text-center my-3">
             <div class="col mx-auto">
                 <ul class="nav nav-pills center-pills">
-                    <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#home2">ATTACK PATTERNS</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#home2">ATTACK PATTERNS</a></li>
                     <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#menu12">COMPARE PATTERNS</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#menu22">SECURITY CONTROLS</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#menu22">SECURITY CONTROLS</a></li>
                 </ul>
             </div>
         </div>
@@ -323,8 +319,7 @@ permalink: index.html
                 map them to the MITRE ATT&CK™ techniques you want to detect. When the analytic
                 event is created, the Kibana display shows the context around the event.
             </p>
-            <a href="analytics-overview.html" class="btn btn-primary btn-aqua">Learn
-                More</a>
+            <a href="analytics-overview.html" class="btn btn-primary btn-aqua">Learn  More</a>
         </div>
     </div>
 </div>
@@ -363,19 +358,15 @@ permalink: index.html
             <div class="row justify-content-start">
                 <div class="col-lg-8 p-5 px-lg-3 align-self-center">
                     <img class="img-fluid rounded mb-3 mx-auto d-block" src="./images/pretties_6.png" alt="">
-                    <h2>Meeting the needs of all users.</h2>
+                    <h2>Meeting the needs of all users</h2>
                     <p class="text-light">
                         Each workflow is focused on the unique needs
                         and requirements of security professionals.
                     </p>
                     <ul class="text-light">
-                        <li>Threat Reporters track, document, and analyze threat
-                            reports
-                        </li>
-                        <li>Defenders track and assess gaps in their networks</li>
-                        <li>Analysts build, improve, and share new and existing
-                            behavior-based analytics
-                        </li>
+                        <li>Threat Reporters research, document, and analyze threat reports</li>
+                        <li>Net Defenders track and assess gaps in their networks</li>
+                        <li>Threat Analysts build, evaluate, and share new behavior-based analytics</li>
                     </ul>
                 </div>
             </div>
@@ -389,7 +380,7 @@ permalink: index.html
             <div class="col-lg-6 align-self-center text-primary img-bkgd py-5 p-lg-5">
                 <h1 class="py-sm-5">Join the Experiment.<br>
                     Developers and
-                    expertise required.</h1>
+                    Security Professionals welcome.</h1>
             </div>
             <div class="col-lg-6">
                 <p class="text-light">

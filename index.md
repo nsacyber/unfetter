@@ -186,7 +186,7 @@ permalink: index.html
                     <div class="col-lg-4 mt-lg-5">
                         <h2 class="text-center text-lg-left">Share</h2>
                         <p class="text-center text-lg-left">
-                            Threat Analysts can create new analytics and mpa them to the MITRE ATT&CK™ framework.  Analytics can be searched, filtered, ranked and commented on.
+                            Threat Analysts can create new analytics and map them to the MITRE ATT&CK™ framework.  Analytics can be searched, filtered, ranked and commented on.
                         </p>
                     </div>
                     <div class="col-lg-8 my-lg-3 mb-3">

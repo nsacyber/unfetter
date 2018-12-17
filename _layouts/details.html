@@ -17,10 +17,14 @@
                 <!--Annotation Group-->
 
                 {% include details/annotation.html %}
-                {% include details/detail-block.html number="1" direction="left" %}
-                {% include details/detail-block.html number="2" direction="right" %}
-                {% include details/detail-block.html number="3" direction="left" %}
-                {% include details/detail-block.html number="4" direction="right" %}
+                {% include details/detail-block.html number="1" direction="left" subtitle=page.1-subtitle
+                title=page.1-title text=page.1-text %}
+                {% include details/detail-block.html number="2" direction="right" subtitle=page.2-subtitle
+                title=page.2-title text=page.2-text %}
+                {% include details/detail-block.html number="3" direction="left" subtitle=page.3-subtitle
+                title=page.3-title text=page.3-text %}
+                {% include details/detail-block.html number="4" direction="right" subtitle=page.4-subtitle
+                title=page.4-title text=page.4-text %}
 
             </div>
         </div>

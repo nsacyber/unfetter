@@ -4,10 +4,10 @@
         {% else %}
         <div class="col-lg-6 order-lg-1 mt-lg-5 px-5">
             {% endif %}
-            <h3 class="text-center text-lg-left">{{ page.1-title }}</h3>
-            <p class="text-blue text-center text-lg-left">{{ page.1-subtitle }}</p>
+            <h3 class="text-center text-lg-left">{{ include.title }}</h3>
+            <p class="text-blue text-center text-lg-left">{{ include.subtitle }}</p>
             <p class="text-center text-lg-left">
-                {{ page.1-text }}
+                {{ include.text }}
             </p>
         </div>
         {% if include.direction == "left" %}

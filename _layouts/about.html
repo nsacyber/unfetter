@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include general/head.html %}
+
+
+<body class="container-fluid detail-icon">
+    {% include navbar.html %}
+    <main role="main">
+
+        <div class="container-fluid detail-icon px-5 my-lg-5 pb-5 py-lg-5">
+            <!--INTRO/HEADER-->
+            <div class="row justify-content-center">
+                <div class="col-sm-8 text-center">
+                    <h1 class="hero">{{ page.title }}</h1>
+                </div>
+                <div class="col-12 text-center pt-sm-5">
+                    <p class="lead">{{ page.intro-paragraph }}</p>
+                </div>
+            </div>
+        </div><!-- /.container -->
+
+
+        {% include about/stix-mitre.html %}
+        {% include about/connections.html %}
+        {% include about/history.html %}
+        {% include general/tour.html %}
+
+
+
+
+    </main>
+
+    {% include footer.html %}
+</body>
+
+</html>

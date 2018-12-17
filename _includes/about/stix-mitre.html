@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-lg-1  bg-blue col-sm-0"></div>
+    <div class="col-lg-5 bg-blue text-light p-sm-5">
+        <img src="./images/about/mitre_attack.png">
+        <h2>A streamlined mission framework.</h2>
+        <p>{{ page.mitre-intro }}</p>
+        <ul class="text-light">
+            {% for line in page.mitre-list %}
+            <li>{{ line }}</li>
+            {% endfor %}
+        </ul>
+        <a href="https://attack.mitre.org" class="btn btn-outline-secondary btn-white">LEARN MORE</a>
+    </div>
+    <div class="col-lg-5 bg-dkgrey text-light p-sm-5">
+        <img class="img-fluid" src="./images/about/stix_logo.png" alt="">
+        <h2>Structured Threat Information eXpression (STIX) Approach</h2>
+        <p class="text-light">
+            {{ page.stix-intro }}
+        </p>
+        <ul class="text-light">
+            {% for line in page.stix-list %}
+            <li>{{ line }}</li>
+            {% endfor %}
+        </ul>
+        <a href="https://oasis-open.github.io/cti-documentation/stix/intro" class="btn btn-outline-secondary btn-white">LEARN
+            MORE</a>
+        <a href="./exports/UF_STIX_ref_doc.pdf" class="btn btn-outline-secondary btn-white">DOWNLOAD DATA SHEET</a>
+    </div>
+    <div class="col-lg-1 bg-dkgrey col-sm-0"></div>
+
+</div>

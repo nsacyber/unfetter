@@ -14,6 +14,11 @@ h1, h2, h3, h4 {
     color: #303F9F;
     font-weight: 300;
 }
+.detail-icon {
+    padding: 0px;
+    margin: 0px;
+ }
+
 h1.hero {
     color: #303F9F;
     font-family: "Roboto", Arial, sans-serif;
@@ -45,7 +50,7 @@ button, a.btn, .nav-pills .nav-link {
     flex: 1;
 }
 .nav-pills .nav-link {
-    color: #9ac0ff;
+    color: #9A9A9A;
     border: 2px solid;
     border-color: transparent;
 }
@@ -54,14 +59,18 @@ button, a.btn, .nav-pills .nav-link {
 }
 .nav-pills .nav-link.active {
     background-color: transparent;
+    color: #303F9F;
     border: 2px solid;
-    color: #007bff;
+    border-color: #303F9F;
 }
 
+
 .bg-black h1, .bg-black h2, .bg-black h3, .bg-black h4, .bg-dkgrey h1, .bg-dkgrey h2, .bg-dkgrey h3, .bg-dkgrey h4 {
-    color: #2979FF;
+    color: #9A9A9A;
     font-weight: 300;
 }
+
+
 .bg-blue h1, .bg-blue h2, .bg-blue h3 {
     color: #b5bff5;
 }
@@ -71,7 +80,12 @@ button, a.btn, .nav-pills .nav-link {
 .bg-blue p, .bg-blue ul, .bg-aqua p, .bg-aqua ul, .bg-dkgrey p, .bg-dkgrey ul {
     color: #fff;
 }
-
+.tour-img-top {
+    object-fit: none;
+}
+.tour {
+    object-fit: none;
+}
 p.lead {
     font-weight: 400;
 }
@@ -92,6 +106,16 @@ p.lead {
 }
 .bg-black {
     background-color: #171717;
+}
+
+.text-black {
+    color: #171717;
+}
+.bg-lt-blue {
+    background-color: #D6E1F4
+}
+.text-blue {
+    color: #448AFF
 }
 .bg-blue {
     background-color: #303f9f;
@@ -220,3 +244,40 @@ pre {
     word-wrap: break-word;
     text-align: justify;
   }
+
+.intro-img {
+    margin-bottom: -100px;
+
+}
+
+.tour-start {
+    margin-top: -110px;
+}
+
+.collage {
+    overflow: hidden;
+    width: 100%
+}
+.collage img {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+.collage-image {
+    background-image:url('./images/about/UF_screen_collage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+}
+
+
+
+.collage-text {
+    margin-top: 150px;
+
+}
+.collage-card {
+    padding-top: 150px;
+    width: 20%
+}

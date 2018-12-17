@@ -1,0 +1,22 @@
+<div class="row align-items-start">
+    {% if include.direction == "left" %}
+    <div class="col-lg-6 order-lg-2 mt-lg-5 px-5">
+        {% else %}
+        <div class="col-lg-6 order-lg-1 mt-lg-5 px-5">
+            {% endif %}
+            <h3 class="text-center text-lg-left">{{ page.1-title }}</h3>
+            <p class="text-blue text-center text-lg-left">{{ page.1-subtitle }}</p>
+            <p class="text-center text-lg-left">
+                {{ page.1-text }}
+            </p>
+        </div>
+        {% if include.direction == "left" %}
+        <div class="col-lg-6 order-lg-0 my-lg-0 mb-0">
+            {% else %}
+            <div class="col-lg-6 order-lg-2 my-lg-3 mb-3">
+                {% endif %}
+
+                <img class="d-inline float-{{ include.direction }}" src="./images/{{ page.directory }}/cropped/{{ include.number }}.png"
+                    alt="{{ page.title }}">
+            </div>
+        </div>

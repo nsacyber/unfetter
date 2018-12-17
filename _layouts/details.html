@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include general/head.html %}
+
+
+<body class="container-fluid detail-icon px-0">
+    {% include navbar.html %}
+    <main role="main">
+        {% include details/intro.html %}
+        {% include details/callout.html %}
+
+
+        <!---Black BG Section -->
+        <div class="container-fluid bg-black detail-icon pt-5">
+            <div class="container-fluid  detail-icon">
+                <!--Annotation Group-->
+
+                {% include details/annotation.html %}
+                {% include details/detail-block.html number="2" direction="left" %}
+                {% include details/detail-block.html number="2" direction="right" %}
+                {% include details/detail-block.html number="3" direction="left" %}
+                {% include details/detail-block.html number="4" direction="right" %}
+
+            </div>
+        </div>
+        {% include general/tour.html %}
+    </main>
+    {% include footer.html %}
+</body>
+
+</html>

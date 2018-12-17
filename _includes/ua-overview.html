@@ -1,49 +1,60 @@
-
 <h2>WELCOME</h2>
 <p>
-Unfetter Analytic is a reference implementation, inspired by The MITRE Corporation
-<a href="https://car.mitre.org" target="_blank">CAR</a> and <a href="https://attack.mitre.org" target="_blank">ATT&amp;CK&trade;</a> framework, and supported by The <a href="https://www.mitre.org" target="_blank">MITRE Corporation</a>
-and the <a href="https://www.nsa.gov" target="_blank">National Security Agency</a> (NSA).
-Unfetter Analytic is a prototype that allows developers to gain familiarity with the <a href="https://attack.mitre.org" target="_blank">ATT&amp;CK&trade;</a> framework to 
-measure the effectiveness of their analytics. Write analytics and map them to the MITRE ATT&amp;CK&trade; techniques 
-you want to detect. When the analytic event is created, the Kibana display shows the context around the event.
+    Unfetter Analytic is a reference implementation, inspired by The MITRE Corporation
+    <a href="https://car.mitre.org" target="_blank">CAR</a> and <a href="https://attack.mitre.org" target="_blank">ATT&amp;CK&trade;</a>
+    framework, and supported by The <a href="https://www.mitre.org" target="_blank">MITRE Corporation</a>
+    and the <a href="https://www.nsa.gov" target="_blank">National Security Agency</a> (NSA).
+    Unfetter Analytic is a prototype that allows developers to gain familiarity with the <a href="https://attack.mitre.org"
+        target="_blank">ATT&amp;CK&trade;</a> framework to
+    measure the effectiveness of their analytics. Write analytics and map them to the MITRE ATT&amp;CK&trade;
+    techniques
+    you want to detect. When the analytic event is created, the Kibana display shows the context around the event.
 </p>
 <p>
-<a href="https://attack.mitre.org" target="_blank">ATT&amp;CK&trade;</a> stands for Adversarial Tactics, Techniques
-and Common Knowledge. It is a model and framework that describes the actions an adversary may take while attacking
-an enterprise network. ATT&amp;CK&trade; specifically focuses on post-exploitation of Windows host systems. Think of
-it as a roadmap that lays out what an attacker COULD be doing on your network.
+    <a href="https://attack.mitre.org" target="_blank">ATT&amp;CK&trade;</a> stands for Adversarial Tactics, Techniques
+    and Common Knowledge. It is a model and framework that describes the actions an adversary may take while attacking
+    an enterprise network. ATT&amp;CK&trade; specifically focuses on post-exploitation of Windows host systems. Think
+    of
+    it as a roadmap that lays out what an attacker COULD be doing on your network.
 </p>
 <p>
-MITRE's Cyber Analytic Repository, or <a href="https://car.mitre.org" target="_blank">CAR</a>, is an effort to document and share analytic ideas and lessons
-learned. Each CAR analytic is framed by the ATT&amp;CK&trade; behavior(s) it is trying to identify.
+    MITRE's Cyber Analytic Repository, or <a href="https://car.mitre.org" target="_blank">CAR</a>, is an effort to
+    document and share analytic ideas and lessons
+    learned. Each CAR analytic is framed by the ATT&amp;CK&trade; behavior(s) it is trying to identify.
 </p>
 <p>
-Unfetter Analytic, a reference implementation that provides a framework for collecting events from a
-client machine (Windows 7), supports building and testing analytics in the CAR model, and displays the alerts as they
-reference the ATT&amp;CK&trade; framework. Unfetter Analytic is not designed to be a production intrusion detection system,
-but it is an educational capability for analytic developers to try, explore, and learn the concepts discussed at
-<a href="http://mitre.github.io/unfetter" target="_blank">http://mitre.github.io/unfetter</a>.
+    Unfetter Analytic, a reference implementation that provides a framework for collecting events from a
+    client machine (Windows 7), supports building and testing analytics in the CAR model, and displays the alerts as
+    they
+    reference the ATT&amp;CK&trade; framework. Unfetter Analytic is not designed to be a production intrusion detection
+    system,
+    but it is an educational capability for analytic developers to try, explore, and learn the concepts discussed at
+    <a href="http://mitre.github.io/unfetter" target="_blank">http://mitre.github.io/unfetter</a>.
 </p>
 <h4>Architecture</h4>
-This reference implementation provides a framework for collecting events from a client machine (Windows 7), and performing <a href="https://car.mitre.org">Cyber Analytics Repository</a> (CAR) analytics to detect potential adversary activity. 
-<img class="img-fluid" src="images/unfetter-architecture-diagram.png" >
+This reference implementation provides a framework for collecting events from a client machine (Windows 7), and
+performing <a href="https://car.mitre.org">Cyber Analytics Repository</a> (CAR) analytics to detect potential adversary
+activity.
+<img class="img-fluid" src="images/unfetter-architecture-diagram.png">
 <p>
-On the left-hand side of the diagram, you see the Windows System, or 
-the "victim machine." <a href="https://www.nxlog.co">NXLog</a> ships standard 
-Windows events to the Unfetter Analytic system. The Windows system, once built, runs Microsoft Sysmon.
+    On the left-hand side of the diagram, you see the Windows System, or
+    the "victim machine." <a href="https://www.nxlog.co">NXLog</a> ships standard
+    Windows events to the Unfetter Analytic system. The Windows system, once built, runs Microsoft Sysmon.
 </p>
 <p>
-On the right, the Unfetter Analytic server is running an <a href="https://www.elastic.co/">Elasticsearch, Logstash, Kibana</a> software stack and
-<a href="http://spark.apache.org">Apache Spark</a> as the main analytic system. Event logs from the victim system and generated alerts 
-are stored in Elasticsearch and are viewable through Kibana.
+    On the right, the Unfetter Analytic server is running an <a href="https://www.elastic.co/">Elasticsearch, Logstash,
+        Kibana</a> software stack and
+    <a href="http://spark.apache.org">Apache Spark</a> as the main analytic system. Event logs from the victim system
+    and generated alerts
+    are stored in Elasticsearch and are viewable through Kibana.
 </p>
 <h4>Designed For Experimentation</h4>
 <p>
-This is not designed for production use. 
-Architectural decisions were made to make it easier to collect and analyze data, 
-as opposed to the more robust requirements 
-needed in a production system. The system was designed to make personalized data 
-source additions easier for experimentation purposes.  Take it, use it, learn, and 
-let us know what you think through our <a href="https://github.com/unfetter-analytic/unfetter/issues" target="_blank">GitHub Issues Tracker</a>.
+    This is not designed for production use.
+    Architectural decisions were made to make it easier to collect and analyze data,
+    as opposed to the more robust requirements
+    needed in a production system. The system was designed to make personalized data
+    source additions easier for experimentation purposes. Take it, use it, learn, and
+    let us know what you think through our <a href="https://github.com/unfetter-discover/unfetter-analytic/issues"
+        target="_blank">GitHub Issues Tracker</a>.
 </p>

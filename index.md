@@ -6,7 +6,7 @@ permalink: index.html
 ---
 
 
-<div class="container-fluid mt-5 mb-3 my-sm-5"><!--INTRO/HEADER-->
+<div class="container-fluid mt-5 mb-3 my-sm-5"> <!--INTRO/HEADER-->
     <div class="row justify-content-center">
         <div class="col-sm-8 text-center">
             <h1 class="hero">The Unfetter Project</h1>
@@ -18,7 +18,7 @@ permalink: index.html
     </div>
 </div><!-- /.container -->
 
-<div class="container my-lg-5 pb-5 py-lg-5"><!--FIRST TEXT BLOCK-->
+<div class="container my-lg-5 pb-5 py-lg-5"> <!--FIRST TEXT BLOCK-->
     <div class="row">
         <div class="col text-center">
             <h1>Discover Gaps. Analytics in Practice. Leverage the Community.</h1>
@@ -41,7 +41,7 @@ permalink: index.html
             <h4>We are an experiment (right now)</h4>
             <p>
                 Unfetter is a community-driven suite of open source tools
-                leveraging the <a href="https://attack.mitre.org/wiki/Main_Page">MITRE ATT&CK™</a> framework,
+                leveraging the <a href="https://attack.mitre.org/wiki/Main_Page">MITRE ATT&amp;CK&trade;</a> framework,
                 shifting the
                 focus from indicators to a behavior-based
                 methodology. This allows you to more effectively assess
@@ -75,223 +75,32 @@ permalink: index.html
     <div class="container py-5"><!--Capability Assessment-->
         <div class="row justify-content-center py-sm-5 py-3">
             <div class="col-lg-8 text-center">
-                <h1><b>Unfetter Discover:</b> A unique platform that unifies the Network Defender and Threat Analysts, letting them create, share, and use threat intel</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col text-center">
-                <h1>Capability Assessments</h1>
+                <h1><b>Unfetter Discover:</b> Analyze seucrity gaps and explore adversary tradecraft.</h1>
             </div>
         </div>
         <div class="row mt-lg-3 justify-content-center">
             <div class="col-lg-9">
                 <p class="text-light text-center">
-                    Network Defenders can assess the mitigations, analytics and sensors in your environment and see which MITRE
-                    ATT&CK™ Techniques are a threat. <a href="discover-overview.html">Learn
-                    more</a></p>
-            </div>
-        </div>
-        <div class="row text-center my-3">
-            <div class="col mx-auto">
-                <ul class="nav nav-pills center-pills">
-                    <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#home">SURVEY</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#menu1">REPORT OVERVIEW</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#menu2">REPORT DASHBOARD</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#menu3">REPORT DETAIL</a></li>
-                </ul>
+                    Unfetter Discover provides a workflow that helps Threat Reporters, Analytic Developers and Network Defenders create and share complex Cyber Threat Intelligence (CTI) data among their peers and across teams.</p><p class="text-center"> <a class="btn btn-outline-secondary btn-white" href="about.html">LEARN MORE</a></p>
             </div>
         </div>
         <div class="tab-content">
             <div id="home" class="tab-pane fade show active">
                 <div class="row">
                     <div class="col-lg-4 order-lg-2 mt-lg-5">
-                        <h2 class="text-center text-lg-left">Survey</h2>
-                        <p class="text-center text-lg-left">
-                            Evaluate your infrastructure’s mitigations, analytics, and capabilities through a simple survey. Visualize your gaps through the lens of MITRE’s ATT&CK™ framework.  As Network Defenders improve the security of the infrastructure, you can update the Assessment, maintaining an update to your situational awareness.
+                        <h2 class="text-center text-lg-left">The Users</h2>
+                        <p class="text-center text-lg-center">
+                            Unfetter Disocover builds tools for cyber experts to help them create, share and use complex Cyber Threat Intelligence information.  Threat Reporters are making sense of the vast amount of research and reporting, Analytic Developers are crafting new detections, and Network Defenders are tackling gaps in their networks and need to know what to focus on next.
                         </p>
                     </div>
                     <div class="col-lg-8 order-lg-1 my-lg-3 mb-3">
-                        <img class="d-block w-100" src="./images/slides/UF_Monitor_report_survey.png" alt="Survey">
-                    </div>
-                </div>
-            </div>
-            <div id="menu1" class="tab-pane fade">
-                <div class="row">
-                    <div class="col-lg-4 order-lg-2 mt-lg-5">
-                        <h2 class="text-center text-lg-left">Report Overview</h2>
-                        <p class="text-center text-lg-left">
-                            Explore a snapshot of your survey answers to quickly measure your risk. This overview allows leadership to compare options and focus resources effectively.
-                        </p>
-                    </div>
-                    <div class="col-lg-8 order-lg-1 my-lg-3 mb-3">
-                        <img class="d-block w-100" src="./images/slides/UF_Monitor_report_overview.png"
-                             alt="Report Overview">
-                    </div>
-                </div>
-            </div>
-            <div id="menu2" class="tab-pane fade">
-                <div class="row">
-                    <div class="col-lg-4 order-lg-2 mt-lg-5">
-                        <h2 class="text-center text-lg-left">Report Dashboard</h2>
-                        <p class="text-center text-lg-left">
-                            Examine your comprehensive network posture to evaluate your vulnerabilities compared to overall attacker tactics and understand what is working and what needs improvement.
-                        </p>
-                    </div>
-                    <div class="col-lg-8 order-lg-1 my-lg-3 mb-3">
-                        <img class="d-block w-100" src="./images/slides/UF_Monitor_report_dashboard.png"
-                             alt="Report Dashboard">
-                    </div>
-                </div>
-            </div>
-            <div id="menu3" class="tab-pane fade">
-                <div class="row">
-                    <div class="col-lg-4 order-lg-2 mt-lg-5">
-                        <h2 class="text-center text-lg-left">Report Detail</h2>
-                        <p class="text-center text-lg-left">
-                            Expand your findings with concrete actions and recommendations. Review details, analyze results from different angles, and determine future courses of action.
-                        </p>
-                    </div>
-                    <div class="col-lg-8 order-lg-1 my-lg-3 mb-3">
-                        <img class="d-block w-100" src="./images/slides/UF_Monitor_report_detail.png"
-                             alt="Report Detail">
+                        <img class="d-block w-100" src="./images/intrusion/annotated.png" alt="Survey">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container mb-5"><!--Analytic Exchange-->
-        <div class="row">
-            <div class="col text-center">
-                <h1>Analytic Exchange</h1>
-            </div>
-        </div>
-        <div class="row mt-lg-3 justify-content-center">
-            <div class="col-lg-9">
-                <p class="text-light text-center">
-                    Threat Analytsts can create, share complex behaviors and engage with each other in a true community</p>
-            </div>
-        </div>
-        <div class="row text-center my-3">
-            <div class="col mx-auto">
-                <ul class="nav nav-pills center-pills">
-                    <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#home3">SHARE</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#menu13">PRIORITIZE</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#menu23">TRANSLATE</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="tab-content">
-            <div id="home3" class="tab-pane fade show active">
-                <div class="row  mb-5 pb-5">
-                    <div class="col-lg-4 mt-lg-5">
-                        <h2 class="text-center text-lg-left">Share</h2>
-                        <p class="text-center text-lg-left">
-                            Threat Analysts can create new analytics and map them to the MITRE ATT&CK™ framework.  Analytics can be searched, filtered, ranked and commented on.
-                        </p>
-                    </div>
-                    <div class="col-lg-8 my-lg-3 mb-3">
-                        <img class="d-block w-100" src="./images/slides/UF_Monitor_analytic_hub.png" alt="Survey">
-                    </div>
-                </div>
-            </div>
-            <div id="menu13" class="tab-pane fade">
-                <div class="row  mb-5 pb-5">
-                    <div class="col-lg-4 mt-lg-5">
-                        <h2 class="text-center text-lg-left">Priortize</h2>
-                        <p class="text-center text-lg-left">
-                            Evaluate your analytic coverage of the the MITRE ATT&CK™ framework in one easy spot.  Easily see the whole picture, and then dive down into the analytics that focus on particular attacker tactics.
-                        </p>
-                    </div>
-                    <div class="col-lg-8 my-lg-3 mb-3">
-                        <img class="d-block w-100" src="./images/slides/UF_Monitor_analytic_hub_detail.png"
-                                alt="">
-                    </div>
-                </div>
-            </div>
-            <div id="menu23" class="tab-pane fade">
-                <div class="row  mb-5 pb-5">
-                    <div class="col-lg-4 mt-lg-5">
-                        <h2 class="text-center text-lg-left">Translate</h2>
-                        <p class="text-center text-lg-left">
-                            Not only describe your analytic, but track different implementations in different SIEMs.  As a beta functionality, Unfetter will translate from the STIX Patterning language to Splunk and Elasticsearch queries automatically.  
-                        </p>
-                    </div>
-                    <div class="col-lg-8 my-lg-3 mb-3">
-                        <img class="d-block w-100" src="./images/slides/UF_Monitor_analytic_hub_create.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container mb-5"><!--Intrusion Set Dashboard-->
-        <div class="row">
-            <div class="col text-center">
-                <h1>Intrusion Set Dashboard</h1>
-            </div>
-        </div>
-        <div class="row mt-lg-3 justify-content-center">
-            <div class="col-lg-9">
-                <p class="text-light text-center">
-                    Explore the MITRE ATT&CK™ techniques associated with intrusions in the Intrusion Set
-                    Dashboard, and view similarities and differences. The Dashboard will also show you
-                    Critical Controls to mitigate these techniques. 
-                </p>
-            </div>
-        </div>
-        <div class="row text-center my-3">
-            <div class="col mx-auto">
-                <ul class="nav nav-pills center-pills">
-                    <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#home2">ATTACK PATTERNS</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#menu12">COMPARE PATTERNS</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#menu22">SECURITY CONTROLS</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="tab-content">
-            <div id="home2" class="tab-pane fade show active">
-                <div class="row">
-                    <div class="col-lg-4 order-lg-2 mt-lg-5">
-                        <h2 class="text-center text-lg-left">Attack Patterns</h2>
-                        <p class="text-center text-lg-left">
-                            Explore the Intrusion Sets and learn the associated MITRE ATT&CK™ techniques.  Explore attack patterns and understand them in depth.
-                        </p>
-                    </div>
-                    <div class="col-lg-8 my-lg-3 mb-3">
-                        <img class="d-block w-100" src="./images/slides/UF_Monitor_attack_patterns.png"
-                             alt="Attack Patterns">
-                    </div>
-                </div>
-            </div>
-            <div id="menu12" class="tab-pane fade">
-                <div class="row">
-                    <div class="col-lg-4 order-lg-2 mt-lg-5">
-                        <h2 class="text-center text-lg-left">Compare Patterns</h2>
-                        <p class="text-center text-lg-left">
-                            Compare Intrusion Sets and discover associated common techniques. Identify which MITRE ATT&CK™ techniques to focus on in your environment.
-                        </p>
-                    </div>
-                    <div class="col-lg-8 order-lg-1 my-lg-3 mb-3">
-                        <img class="d-block w-100" src="./images/slides/UF_Monitor_compare_patterns.png"
-                             alt="Compare Patterns">
-                    </div>
-                </div>
-            </div>
-            <div id="menu22" class="tab-pane fade">
-                <div class="row">
-                    <div class="col-lg-4 order-lg-2 mt-lg-5">
-                        <h2 class="text-center text-lg-left">Security Controls</h2>
-                        <p class="text-center text-lg-left">
-                            Determine which mitigations would stop the MITRE ATT&CK™ techniques that different Intrusion Sets use. This prioritized list is a valuable place to start with your network security.
-                        </p>
-                    </div>
-                    <div class="col-lg-8 order-lg-1 my-lg-3 mb-3">
-                        <img class="d-block w-100" src="./images/slides/UF_Monitor_security_controls.png"
-                             alt="Security Controls">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
    <div class="container-fluid text-center divider-image"><!--DIVIDER IMAGE-->
         <div class="row align-items-end divider-row2">
@@ -315,8 +124,8 @@ permalink: index.html
         <div class="col text-center">
             <p>
                 Unfetter Analytic is a prototype that allows developers to gain familiarity with the
-                ATT&CK™ framework to measure the effectiveness of their analytics. Write analytics and
-                map them to the MITRE ATT&CK™ techniques you want to detect. When the analytic
+                ATT&amp;CK&trade; framework to measure the effectiveness of their analytics. Write analytics and
+                map them to the MITRE ATT&amp;CK&trade; techniques you want to detect. When the analytic
                 event is created, the Kibana display shows the context around the event.
             </p>
             <a href="analytics-overview.html" class="btn btn-primary btn-aqua">Learn  More</a>
@@ -331,10 +140,10 @@ permalink: index.html
                 <div class="col-lg-8 p-5 px-lg-3 align-self-center">
                     <h2>The Future of Unfetter</h2>
                     <p class="text-light">
-                        The Unfetter team is improving current capabilities and experimenting in new areas.
+                        There are lots of areas that Unfetter is looking to focus.
                     </p>
                     <ul class="text-light">
-                        <li>Read and associate threat reports with MITRE ATT&CK™ techniques
+                        <li>Automatically read and associate threat reports with MITRE ATT&amp;CK&trade; techniques
                         </li>
                         <li>Translate and convert analytics to work in
                             Elasticsearch, Splunk, etc.
@@ -350,7 +159,6 @@ permalink: index.html
                         </li>
                         <li>Increase Red and Blue Team effectiveness with the Purple Team Operations Planner</li>
                     </ul>
-                    <a href="unfetter-future.html" class="btn btn-outline-secondary btn-white">Learn More</a>
                 </div>
             </div>
         </div>

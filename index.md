@@ -75,7 +75,7 @@ permalink: index.html
     <div class="container py-5"><!--Capability Assessment-->
         <div class="row justify-content-center py-sm-5 py-3">
             <div class="col-lg-8 text-center">
-                <h1><b>Unfetter Discover:</b> Analyze seucrity gaps and explore adversary tradecraft.</h1>
+                <h1><b>Unfetter Discover:</b> Analyze security gaps and explore adversary tradecraft.</h1>
             </div>
         </div>
         <div class="row mt-lg-3 justify-content-center">
